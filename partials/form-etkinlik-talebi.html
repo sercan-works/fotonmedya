@@ -1,0 +1,213 @@
+<!-- Etkinlik talebi formu — htmx ile yüklenir. Talep türüne göre alan grupları açılır (data-goster).
+     ?tur=atolye|duyuru|fotografci|ortak ile ön seçim yapılabilir. Tanıtım sürümünde gönderim yapılmaz. -->
+<div class="form-kutu">
+  <h2 id="talep-baslik">Talep formu</h2>
+  <p class="form-aciklama">Talep türünü seçin; formun geri kalanı seçiminize göre açılır. Yıldızlı alanlar zorunludur.</p>
+  <form class="form" data-form data-onsecim-param="tur" data-onsecim-alan="talep_turu" data-basari-baslik="Talep formunuz eksiksiz" data-basari-metin="Gerçek sürümde talebiniz ilgili ekibe iletilecek ve ön görüşme için sizi arayacağız." aria-labelledby="talep-baslik">
+
+    <fieldset class="alan">
+      <legend>Talep türü <span class="zorunlu" aria-hidden="true">*</span></legend>
+      <div class="secimler">
+        <label class="secim"><input type="radio" name="talep_turu" value="atolye" required data-hata="Lütfen bir talep türü seçin."><span>Atölye ya da eğitim<small>Okul, kurum ya da firma için</small></span></label>
+        <label class="secim"><input type="radio" name="talep_turu" value="duyuru" required><span>Etkinliğimizi duyurun<small>Basın bülteni ve haberleştirme</small></span></label>
+        <label class="secim"><input type="radio" name="talep_turu" value="fotografci" required><span>Fotoğrafçı / basın desteği<small>Etkinliğinize fotoğrafçı ya da muhabir</small></span></label>
+        <label class="secim"><input type="radio" name="talep_turu" value="ortak" required><span>Ortak etkinlik / sponsorluk<small>İş birliği, sponsorluk, reklam</small></span></label>
+      </div>
+      <span class="alan-hata" aria-live="polite"></span>
+    </fieldset>
+
+    <!-- Atölye ya da eğitim -->
+    <fieldset class="form-grup" data-goster="talep_turu=atolye" hidden>
+      <legend class="form-grup-baslik"><svg class="ikon" aria-hidden="true"><use href="#i-kitap"/></svg> Atölye bilgileri</legend>
+      <div class="form-satir">
+        <div class="alan">
+          <label for="t-kurum-turu">Kurum türü <span class="zorunlu" aria-hidden="true">*</span></label>
+          <select id="t-kurum-turu" name="kurum_turu" required>
+            <option value="">Seçin</option>
+            <option>İlkokul / ortaokul</option>
+            <option>Lise</option>
+            <option>Üniversite / öğrenci kulübü</option>
+            <option>Kamu kurumu / belediye</option>
+            <option>Firma (kurumsal eğitim)</option>
+            <option>Sivil toplum kuruluşu</option>
+            <option>Diğer</option>
+          </select>
+          <span class="alan-hata" aria-live="polite"></span>
+        </div>
+        <div class="alan">
+          <label for="t-konu">Atölye konusu <span class="zorunlu" aria-hidden="true">*</span></label>
+          <select id="t-konu" name="atolye_konusu" required>
+            <option value="">Seçin</option>
+            <option>Temel fotoğrafçılık</option>
+            <option>Telefonla fotoğraf</option>
+            <option>Çocuklar için oyunla fotoğraf</option>
+            <option>Foto-gezi / saha çalışması</option>
+            <option>Kurumsal ve ürün fotoğrafı</option>
+            <option>Henüz karar vermedik</option>
+          </select>
+          <span class="alan-hata" aria-live="polite"></span>
+        </div>
+      </div>
+      <div class="form-satir">
+        <div class="alan">
+          <label for="t-katilimci">Tahmini katılımcı sayısı <span class="zorunlu" aria-hidden="true">*</span></label>
+          <input id="t-katilimci" name="katilimci" type="number" inputmode="numeric" min="5" max="500" required>
+          <span class="alan-hata" aria-live="polite"></span>
+        </div>
+        <div class="alan">
+          <label for="t-yas">Katılımcıların yaş grubu</label>
+          <select id="t-yas" name="yas_grubu">
+            <option value="">Seçin</option>
+            <option>6–9 yaş</option>
+            <option>10–13 yaş</option>
+            <option>14–17 yaş</option>
+            <option>Yetişkin</option>
+            <option>Karma</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-satir">
+        <div class="alan">
+          <label for="t-tercih-tarih">Tercih ettiğiniz tarih</label>
+          <input id="t-tercih-tarih" name="tercih_tarihi" type="date" data-ileri>
+          <span class="alan-hata" aria-live="polite"></span>
+        </div>
+        <fieldset class="alan">
+          <legend>Atölye nerede yapılsın?</legend>
+          <div class="secimler secimler--kucuk">
+            <label class="secim"><input type="radio" name="atolye_yeri" value="kurum"><span>Bizim mekânımızda</span></label>
+            <label class="secim"><input type="radio" name="atolye_yeri" value="dernek"><span>Dernek merkezinde</span></label>
+          </div>
+        </fieldset>
+      </div>
+    </fieldset>
+
+    <!-- Duyuru -->
+    <fieldset class="form-grup" data-goster="talep_turu=duyuru" hidden>
+      <legend class="form-grup-baslik"><svg class="ikon" aria-hidden="true"><use href="#i-yayin"/></svg> Duyurulacak etkinlik</legend>
+      <div class="alan">
+        <label for="t-etk-ad">Etkinliğin adı <span class="zorunlu" aria-hidden="true">*</span></label>
+        <input id="t-etk-ad" name="etkinlik_adi" type="text" maxlength="120" required>
+        <span class="alan-hata" aria-live="polite"></span>
+      </div>
+      <div class="form-satir">
+        <div class="alan">
+          <label for="t-etk-tarih">Tarih <span class="zorunlu" aria-hidden="true">*</span></label>
+          <input id="t-etk-tarih" name="etkinlik_tarihi" type="date" data-ileri required>
+          <span class="alan-hata" aria-live="polite"></span>
+        </div>
+        <div class="alan">
+          <label for="t-etk-yer">Yer <span class="zorunlu" aria-hidden="true">*</span></label>
+          <input id="t-etk-yer" name="etkinlik_yeri" type="text" maxlength="120" required>
+          <span class="alan-hata" aria-live="polite"></span>
+        </div>
+      </div>
+      <div class="alan">
+        <label for="t-bulten">Basın bülteni / açıklama <span class="zorunlu" aria-hidden="true">*</span></label>
+        <textarea id="t-bulten" name="basin_bulteni" minlength="50" maxlength="3000" required placeholder="Etkinliğin ne olduğu, kimlere açık olduğu, katılım koşulları…"></textarea>
+        <span class="ipucu">En az 50 karakter. Gerçek sürümde fotoğraflarınızı da buradan yükleyebileceksiniz.</span>
+        <span class="alan-hata" aria-live="polite"></span>
+      </div>
+      <div class="alan">
+        <label for="t-baglanti">Etkinlik bağlantısı</label>
+        <input id="t-baglanti" name="baglanti" type="url" inputmode="url" placeholder="https://">
+        <span class="alan-hata" aria-live="polite"></span>
+      </div>
+      <p class="ipucu">Duyurular ücretsizdir ve editör onayından sonra yayımlanır. Reklam niteliğindeki içerikler “Sponsorlu” etiketiyle yayımlanır.</p>
+    </fieldset>
+
+    <!-- Fotoğrafçı / basın desteği -->
+    <fieldset class="form-grup" data-goster="talep_turu=fotografci" hidden>
+      <legend class="form-grup-baslik"><svg class="ikon" aria-hidden="true"><use href="#i-kamera"/></svg> Etkinlik ve ihtiyacınız</legend>
+      <div class="alan">
+        <label for="t-fe-ad">Etkinliğin adı <span class="zorunlu" aria-hidden="true">*</span></label>
+        <input id="t-fe-ad" name="destek_etkinlik_adi" type="text" maxlength="120" required>
+        <span class="alan-hata" aria-live="polite"></span>
+      </div>
+      <div class="form-satir">
+        <div class="alan">
+          <label for="t-fe-tarih">Tarih <span class="zorunlu" aria-hidden="true">*</span></label>
+          <input id="t-fe-tarih" name="destek_tarihi" type="date" data-ileri required>
+          <span class="alan-hata" aria-live="polite"></span>
+        </div>
+        <div class="alan">
+          <label for="t-fe-saat">Saat aralığı</label>
+          <input id="t-fe-saat" name="destek_saati" type="text" maxlength="40" placeholder="Örn. 14:00–17:00">
+        </div>
+      </div>
+      <div class="alan">
+        <label for="t-fe-yer">Yer <span class="zorunlu" aria-hidden="true">*</span></label>
+        <input id="t-fe-yer" name="destek_yeri" type="text" maxlength="120" required>
+        <span class="alan-hata" aria-live="polite"></span>
+      </div>
+      <fieldset class="alan">
+        <legend>Neye ihtiyacınız var? <span class="zorunlu" aria-hidden="true">*</span></legend>
+        <div class="secimler secimler--kucuk" data-en-az="1" data-hata="En az bir ihtiyaç seçin.">
+          <label class="secim"><input type="checkbox" name="ihtiyac" value="fotograf"><span>Fotoğraf çekimi</span></label>
+          <label class="secim"><input type="checkbox" name="ihtiyac" value="haber"><span>Haber / basın yazısı</span></label>
+          <label class="secim"><input type="checkbox" name="ihtiyac" value="sosyal"><span>Sosyal medya paylaşımı</span></label>
+        </div>
+        <span class="alan-hata" aria-live="polite"></span>
+      </fieldset>
+    </fieldset>
+
+    <!-- Ortak etkinlik / sponsorluk -->
+    <fieldset class="form-grup" data-goster="talep_turu=ortak" hidden>
+      <legend class="form-grup-baslik"><svg class="ikon" aria-hidden="true"><use href="#i-kalp"/></svg> Teklifiniz</legend>
+      <fieldset class="alan">
+        <legend>Teklif türü <span class="zorunlu" aria-hidden="true">*</span></legend>
+        <div class="secimler secimler--kucuk">
+          <label class="secim"><input type="radio" name="teklif_turu" value="sponsorluk" required><span>Sponsorluk</span></label>
+          <label class="secim"><input type="radio" name="teklif_turu" value="ortak-etkinlik" required><span>Ortak etkinlik</span></label>
+          <label class="secim"><input type="radio" name="teklif_turu" value="reklam" required><span>Reklam / tanıtım</span></label>
+          <label class="secim"><input type="radio" name="teklif_turu" value="kurumsal-atolye" required><span>Kurumsal atölye</span></label>
+          <label class="secim"><input type="radio" name="teklif_turu" value="diger" required><span>Diğer</span></label>
+        </div>
+        <span class="alan-hata" aria-live="polite"></span>
+      </fieldset>
+      <div class="alan">
+        <label for="t-teklif">Teklifinizi kısaca anlatın <span class="zorunlu" aria-hidden="true">*</span></label>
+        <textarea id="t-teklif" name="teklif_aciklama" minlength="30" maxlength="2000" required placeholder="Hangi etkinlik ya da çalışma için, nasıl bir iş birliği düşünüyorsunuz?"></textarea>
+        <span class="alan-hata" aria-live="polite"></span>
+      </div>
+    </fieldset>
+
+    <!-- İletişim -->
+    <div class="form-satir">
+      <div class="alan">
+        <label for="t-ad">Ad soyad <span class="zorunlu" aria-hidden="true">*</span></label>
+        <input id="t-ad" name="ad" type="text" autocomplete="name" maxlength="80" required>
+        <span class="alan-hata" aria-live="polite"></span>
+      </div>
+      <div class="alan">
+        <label for="t-kurum">Kurum / kuruluş</label>
+        <input id="t-kurum" name="kurum" type="text" autocomplete="organization" maxlength="120">
+      </div>
+    </div>
+    <div class="form-satir">
+      <div class="alan">
+        <label for="t-tel">Telefon <span class="zorunlu" aria-hidden="true">*</span></label>
+        <input id="t-tel" name="telefon" type="tel" inputmode="tel" autocomplete="tel" maxlength="20" placeholder="05XX XXX XX XX" required>
+        <span class="alan-hata" aria-live="polite"></span>
+      </div>
+      <div class="alan">
+        <label for="t-eposta">E-posta <span class="zorunlu" aria-hidden="true">*</span></label>
+        <input id="t-eposta" name="eposta" type="email" autocomplete="email" maxlength="120" required>
+        <span class="alan-hata" aria-live="polite"></span>
+      </div>
+    </div>
+    <div class="alan">
+      <label for="t-not">Eklemek istedikleriniz</label>
+      <textarea id="t-not" name="not" maxlength="1000"></textarea>
+    </div>
+    <div class="alan">
+      <label class="onay"><input type="checkbox" name="kvkk" required data-ozet="KVKK aydınlatma metni" data-hata="Devam etmek için aydınlatma metnini okuduğunuzu onaylayın."><span><a href="/kvkk-aydinlatma-metni/" target="_blank">KVKK aydınlatma metnini</a> okudum; talebimle ilgili benimle iletişime geçilmesini kabul ediyorum.</span></label>
+      <span class="alan-hata" aria-live="polite"></span>
+    </div>
+
+    <div class="form-alt">
+      <small>Tanıtım sürümü: bilgileriniz kaydedilmez.</small>
+      <button class="btn btn--birincil" type="submit"><svg class="ikon" aria-hidden="true"><use href="#i-gonder"/></svg> Talebi gönder</button>
+    </div>
+  </form>
+</div>

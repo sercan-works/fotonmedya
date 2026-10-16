@@ -1,0 +1,64 @@
+{
+  "_not": "Foton Medya tanıtım sitesi — ana ayar dosyası. Değerleri düzenleyip kaydetmeniz yeterli; sayfalar açılışta bu dosyayı okur.",
+  "demo": true,
+  "demoBugun": "",
+  "_demoBugunNot": "Tanıtım ileri bir tarihte yapılacaksa 'demoBugun': '2026-10-16' yazın; etkinlikler bu güne göre yaklaşan/geçmiş sayılır. Boş bırakılırsa gerçek tarih kullanılır.",
+  "hava": {
+    "_not": "Çekim Havası: Open-Meteo'dan (ücretsiz, API anahtarı gerektirmez) canlı 3 günlük tahmin ve fotoğrafçılar için öneri. aktif: false yaparsanız header'daki çip ve ana sayfadaki bölüm gizlenir.",
+    "aktif": true,
+    "yer": "Eskişehir",
+    "enlem": 39.7767,
+    "boylam": 30.5206
+  },
+  "site": {
+    "ad": "Foton Medya",
+    "slogan": "Fotoğrafçıların kalemi, Eskişehir'in hafızası",
+    "yayinci": "Eskişehir FOTON — Fotoğraf Organizasyonları Derneği",
+    "url": ""
+  },
+  "iletisim": {
+    "eposta": "eskisehir@foton.com.tr",
+    "telefon1": "+905349748761",
+    "telefon1Goster": "0 (534) 974 87 61",
+    "telefon2": "+905548930378",
+    "telefon2Goster": "0 (554) 893 03 78",
+    "adres": "Akarbaşı Mah. Akyıldız Sok. No:33/4 Tepebaşı / Eskişehir",
+    "haritaUrl": "https://www.google.com/maps/search/?api=1&query=Akarba%C5%9F%C4%B1+Mah.+Aky%C4%B1ld%C4%B1z+Sok.+No%3A33+Tepeba%C5%9F%C4%B1+Eski%C5%9Fehir"
+  },
+  "sosyal": {
+    "instagram": "",
+    "facebook": "",
+    "x": "",
+    "youtube": ""
+  },
+  "kategoriler": [
+    { "slug": "sehir", "ad": "Şehir", "renk": "#1d5fa8" },
+    { "slug": "fotograf", "ad": "Fotoğraf", "renk": "#0a7aa0" },
+    { "slug": "kultur-sanat", "ad": "Kültür-Sanat", "renk": "#7c3aed" },
+    { "slug": "gezi", "ad": "Gezi", "renk": "#0f766e" },
+    { "slug": "tarih", "ad": "Tarih", "renk": "#9a5b13" },
+    { "slug": "spor", "ad": "Spor", "renk": "#c2410c" },
+    { "slug": "yasam", "ad": "Yaşam", "renk": "#be185d" },
+    { "slug": "saglik", "ad": "Sağlık", "renk": "#15803d" },
+    { "slug": "is-dunyasi", "ad": "İş Dünyası", "renk": "#475569" },
+    { "slug": "doga-cevre", "ad": "Doğa-Çevre", "renk": "#4d7c0f" }
+  ],
+  "etkinlikTurleri": [
+    { "slug": "atolye", "ad": "Atölye", "renk": "#1d5fa8" },
+    { "slug": "foto-gezi", "ad": "Foto-gezi", "renk": "#0f766e" },
+    { "slug": "sergi", "ad": "Sergi", "renk": "#7c3aed" },
+    { "slug": "yarisma", "ad": "Yarışma", "renk": "#c2410c" },
+    { "slug": "soylesi", "ad": "Söyleşi", "renk": "#475569" },
+    { "slug": "cocuk", "ad": "Çocuk", "renk": "#be185d" }
+  ],
+  "roller": {
+    "editor": { "ad": "Editör", "cogul": "Editörler" },
+    "muhabir": { "ad": "Foton Muhabiri", "cogul": "Foton Muhabirleri" },
+    "kose": { "ad": "Köşe Yazarı", "cogul": "Köşe Yazarları" }
+  },
+  "haberTurleri": {
+    "haber": "Haber",
+    "foto-haber": "Foto-haber",
+    "kose": "Köşe yazısı"
+  }
+}

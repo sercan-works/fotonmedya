@@ -1,0 +1,178 @@
+<!-- Bizimle Yaz / Fotoğraf Gönder formu — htmx ile yüklenir. Başvuru türüne göre alan grupları açılır.
+     ?tur=muhabir|kose|haber|fotograf ile ön seçim yapılabilir. Tanıtım sürümünde gönderim yapılmaz. -->
+<div class="form-kutu">
+  <h2 id="yaz-baslik">Başvuru ve gönderim formu</h2>
+  <p class="form-aciklama">Ne yapmak istediğinizi seçin; formun geri kalanı seçiminize göre açılır. Yıldızlı alanlar zorunludur.</p>
+  <form class="form" data-form data-onsecim-param="tur" data-onsecim-alan="basvuru_turu" data-basari-baslik="Formunuz eksiksiz" data-basari-metin="Gerçek sürümde gönderiminiz editör ekibine iletilecek; değerlendirme sonucunu size e-postayla bildireceğiz." aria-labelledby="yaz-baslik">
+
+    <fieldset class="alan">
+      <legend>Ne yapmak istiyorsunuz? <span class="zorunlu" aria-hidden="true">*</span></legend>
+      <div class="secimler">
+        <label class="secim"><input type="radio" name="basvuru_turu" value="muhabir" required data-hata="Lütfen bir seçim yapın."><span>Foton Muhabiri olmak<small>Düzenli haber ve foto-haber</small></span></label>
+        <label class="secim"><input type="radio" name="basvuru_turu" value="kose" required><span>Köşe yazarı olmak<small>Düzenli görüş yazısı</small></span></label>
+        <label class="secim"><input type="radio" name="basvuru_turu" value="haber" required><span>Haber göndermek<small>Tek seferlik haber ya da duyuru</small></span></label>
+        <label class="secim"><input type="radio" name="basvuru_turu" value="fotograf" required><span>Fotoğraf göndermek<small>Galeri ve Haftanın Karesi için</small></span></label>
+      </div>
+      <span class="alan-hata" aria-live="polite"></span>
+    </fieldset>
+
+    <!-- Muhabir / köşe yazarı başvurusu -->
+    <fieldset class="form-grup" data-goster="basvuru_turu=muhabir,kose" hidden>
+      <legend class="form-grup-baslik"><svg class="ikon" aria-hidden="true"><use href="#i-kalem"/></svg> Başvuru bilgileri</legend>
+      <fieldset class="alan">
+        <legend>Hangi konularda yazmak istersiniz? <span class="zorunlu" aria-hidden="true">*</span></legend>
+        <div class="secimler secimler--kucuk" data-en-az="1" data-hata="En az bir konu seçin."><label class="secim"><input type="checkbox" name="konular" value="sehir"><span>Şehir</span></label><label class="secim"><input type="checkbox" name="konular" value="fotograf"><span>Fotoğraf</span></label><label class="secim"><input type="checkbox" name="konular" value="kultur-sanat"><span>Kültür-Sanat</span></label><label class="secim"><input type="checkbox" name="konular" value="gezi"><span>Gezi</span></label><label class="secim"><input type="checkbox" name="konular" value="tarih"><span>Tarih</span></label><label class="secim"><input type="checkbox" name="konular" value="spor"><span>Spor</span></label><label class="secim"><input type="checkbox" name="konular" value="yasam"><span>Yaşam</span></label><label class="secim"><input type="checkbox" name="konular" value="saglik"><span>Sağlık</span></label><label class="secim"><input type="checkbox" name="konular" value="is-dunyasi"><span>İş Dünyası</span></label><label class="secim"><input type="checkbox" name="konular" value="doga-cevre"><span>Doğa-Çevre</span></label></div>
+        <span class="alan-hata" aria-live="polite"></span>
+      </fieldset>
+      <div class="alan" data-goster="basvuru_turu=kose">
+        <label for="y-kose-adi">Köşe adı öneriniz</label>
+        <input id="y-kose-adi" name="kose_adi" type="text" maxlength="60" placeholder="Örn. Diyafram">
+      </div>
+      <div class="form-satir">
+        <div class="alan">
+          <label for="y-ornek">Örnek çalışmalarınız</label>
+          <input id="y-ornek" name="ornek_baglanti" type="url" inputmode="url" placeholder="https://">
+          <span class="ipucu">Yazı, blog, portfolyo ya da Instagram bağlantısı.</span>
+          <span class="alan-hata" aria-live="polite"></span>
+        </div>
+        <div class="alan">
+          <label for="y-siklik">Ne sıklıkla yazabilirsiniz?</label>
+          <select id="y-siklik" name="siklik">
+            <option value="">Seçin</option>
+            <option>Haftada bir</option>
+            <option>İki haftada bir</option>
+            <option>Ayda bir</option>
+            <option>Fırsat buldukça</option>
+          </select>
+        </div>
+      </div>
+      <div class="alan">
+        <label for="y-tanitim">Kendinizi tanıtın <span class="zorunlu" aria-hidden="true">*</span></label>
+        <textarea id="y-tanitim" name="tanitim" minlength="50" maxlength="1500" required placeholder="Fotoğraf ve yazı deneyiminiz, neler anlatmak istediğiniz…"></textarea>
+        <span class="ipucu">En az 50 karakter.</span>
+        <span class="alan-hata" aria-live="polite"></span>
+      </div>
+    </fieldset>
+
+    <!-- Haber gönderimi -->
+    <fieldset class="form-grup" data-goster="basvuru_turu=haber" hidden>
+      <legend class="form-grup-baslik"><svg class="ikon" aria-hidden="true"><use href="#i-yayin"/></svg> Haberiniz</legend>
+      <div class="form-satir">
+        <div class="alan">
+          <label for="y-baslik">Başlık <span class="zorunlu" aria-hidden="true">*</span></label>
+          <input id="y-baslik" name="haber_baslik" type="text" maxlength="140" required>
+          <span class="alan-hata" aria-live="polite"></span>
+        </div>
+        <div class="alan">
+          <label for="y-kategori">Kategori <span class="zorunlu" aria-hidden="true">*</span></label>
+          <select id="y-kategori" name="haber_kategori" required>
+            <option value="">Seçin</option>
+            <option value="sehir">Şehir</option><option value="fotograf">Fotoğraf</option><option value="kultur-sanat">Kültür-Sanat</option><option value="gezi">Gezi</option><option value="tarih">Tarih</option><option value="spor">Spor</option><option value="yasam">Yaşam</option><option value="saglik">Sağlık</option><option value="is-dunyasi">İş Dünyası</option><option value="doga-cevre">Doğa-Çevre</option>
+          </select>
+          <span class="alan-hata" aria-live="polite"></span>
+        </div>
+      </div>
+      <div class="alan">
+        <label for="y-metin">Haber metni <span class="zorunlu" aria-hidden="true">*</span></label>
+        <textarea id="y-metin" name="haber_metni" minlength="100" maxlength="5000" required style="min-height:180px" placeholder="Ne oldu, nerede, ne zaman, kimler vardı?"></textarea>
+        <span class="ipucu">En az 100 karakter. Kaynaklarınızı ve tanıklarınızı belirtin.</span>
+        <span class="alan-hata" aria-live="polite"></span>
+      </div>
+      <div class="alan">
+        <label for="y-haber-foto">Fotoğraf bağlantısı</label>
+        <input id="y-haber-foto" name="haber_foto" type="url" inputmode="url" placeholder="https://">
+        <span class="ipucu">Gerçek sürümde fotoğraflar doğrudan yüklenecek.</span>
+        <span class="alan-hata" aria-live="polite"></span>
+      </div>
+    </fieldset>
+
+    <!-- Fotoğraf gönderimi -->
+    <fieldset class="form-grup" data-goster="basvuru_turu=fotograf" hidden>
+      <legend class="form-grup-baslik"><svg class="ikon" aria-hidden="true"><use href="#i-gorsel"/></svg> Fotoğrafınız</legend>
+      <div class="alan">
+        <label for="y-foto">Fotoğraf bağlantısı <span class="zorunlu" aria-hidden="true">*</span></label>
+        <input id="y-foto" name="foto_baglanti" type="url" inputmode="url" placeholder="https://" required>
+        <span class="ipucu">Gerçek sürümde fotoğraf doğrudan yüklenecek.</span>
+        <span class="alan-hata" aria-live="polite"></span>
+      </div>
+      <div class="form-satir">
+        <div class="alan">
+          <label for="y-foto-ad">Fotoğrafın adı <span class="zorunlu" aria-hidden="true">*</span></label>
+          <input id="y-foto-ad" name="foto_ad" type="text" maxlength="80" required>
+          <span class="alan-hata" aria-live="polite"></span>
+        </div>
+        <div class="alan">
+          <label for="y-tema">Tema</label>
+          <select id="y-tema" name="tema">
+            <option value="">Seçin</option>
+            <option>Şehir</option>
+            <option>Mimari</option>
+            <option>Doğa</option>
+            <option>Sokak</option>
+            <option>Portre</option>
+          </select>
+        </div>
+      </div>
+      <div class="alan">
+        <label for="y-foto-yer">Çekim yeri ve tarihi</label>
+        <input id="y-foto-yer" name="foto_yer" type="text" maxlength="120" placeholder="Örn. Porsuk kıyısı, Ekim 2026">
+      </div>
+      <fieldset class="alan">
+        <legend>Haftanın Karesi seçkisine aday olsun mu?</legend>
+        <div class="secimler secimler--kucuk">
+          <label class="secim"><input type="radio" name="hk_aday" value="evet"><span>Evet</span></label>
+          <label class="secim"><input type="radio" name="hk_aday" value="hayir"><span>Hayır, yalnızca galeri</span></label>
+        </div>
+      </fieldset>
+    </fieldset>
+
+    <!-- İletişim -->
+    <div class="form-satir">
+      <div class="alan">
+        <label for="y-ad">Ad soyad <span class="zorunlu" aria-hidden="true">*</span></label>
+        <input id="y-ad" name="ad" type="text" autocomplete="name" maxlength="80" required>
+        <span class="ipucu">Yayımlanırsa kredide bu ad yazar.</span>
+        <span class="alan-hata" aria-live="polite"></span>
+      </div>
+      <div class="alan">
+        <label for="y-tel">Telefon <span class="zorunlu" aria-hidden="true">*</span></label>
+        <input id="y-tel" name="telefon" type="tel" inputmode="tel" autocomplete="tel" maxlength="20" placeholder="05XX XXX XX XX" required>
+        <span class="alan-hata" aria-live="polite"></span>
+      </div>
+    </div>
+    <div class="form-satir">
+      <div class="alan">
+        <label for="y-eposta">E-posta <span class="zorunlu" aria-hidden="true">*</span></label>
+        <input id="y-eposta" name="eposta" type="email" autocomplete="email" maxlength="120" required>
+        <span class="alan-hata" aria-live="polite"></span>
+      </div>
+      <div class="alan">
+        <label for="y-uye">Eskişehir FOTON üyesi misiniz?</label>
+        <select id="y-uye" name="uyelik">
+          <option value="">Seçin</option>
+          <option>Evet</option>
+          <option>Hayır</option>
+          <option>Üye olmak istiyorum</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="alan" data-goster="basvuru_turu=haber,fotograf">
+      <label class="onay"><input type="checkbox" name="telif_onay" required data-ozet="Telif ve yayın izni" data-hata="Gönderim için telif ve yayın iznini onaylamanız gerekiyor."><span>Gönderdiğim fotoğraf ve metinlerin sahibi benim. Telif hakkı bende kalmak üzere, adım ve fotoğraf kredim belirtilerek Foton Medya’da ve derneğin sosyal medya hesaplarında yayımlanmasına izin veriyorum. Fotoğraflarda tanınabilir kişilerin (çocuklar için velilerin) iznini aldım. <a href="#telif">Telif politikası</a></span></label>
+      <span class="alan-hata" aria-live="polite"></span>
+    </div>
+    <div class="alan" data-goster="basvuru_turu=muhabir,kose">
+      <label class="onay"><input type="checkbox" name="ilke_onay" required data-ozet="Yayın İlkeleri" data-hata="Başvuru için Yayın İlkeleri’ni kabul etmeniz gerekiyor."><span><a href="/yayin-ilkeleri/" target="_blank">Yayın İlkeleri</a>’ni okudum; içeriklerimin editör onayından sonra yayımlanacağını biliyorum.</span></label>
+      <span class="alan-hata" aria-live="polite"></span>
+    </div>
+    <div class="alan">
+      <label class="onay"><input type="checkbox" name="kvkk" required data-ozet="KVKK aydınlatma metni" data-hata="Devam etmek için aydınlatma metnini okuduğunuzu onaylayın."><span><a href="/kvkk-aydinlatma-metni/" target="_blank">KVKK aydınlatma metnini</a> okudum; gönderimimle ilgili benimle iletişime geçilmesini kabul ediyorum.</span></label>
+      <span class="alan-hata" aria-live="polite"></span>
+    </div>
+
+    <div class="form-alt">
+      <small>Tanıtım sürümü: bilgileriniz kaydedilmez.</small>
+      <button class="btn btn--birincil" type="submit"><svg class="ikon" aria-hidden="true"><use href="#i-gonder"/></svg> Gönder</button>
+    </div>
+  </form>
+</div>

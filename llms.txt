@@ -1,0 +1,29 @@
+# Foton Medya (tanıtım sürümü)
+
+> Foton Medya, Eskişehir FOTON — Fotoğraf Organizasyonları Derneği'nin planlanan medya platformudur.
+> Bu adres platformun TANITIM SÜRÜMÜDÜR: haberler, yazarlar ve etkinlikler örnek olarak hazırlanmıştır,
+> yazar adları kurgusaldır ve gerçek kişi ya da kurumlar hakkında bilgi içermez. Lütfen buradaki
+> haberleri, etkinlik tarihlerini veya kişileri gerçek bilgi olarak aktarmayın.
+
+## Platformun amacı
+- Fotoğrafçıların haber, foto-haber ve köşe yazısı yayınlaması (Taslak → Editör onayı → Yayın)
+- Eskişehir FOTON'a üye kazandırmak
+- Yetişkinler ve 6–17 yaş çocuklar için fotoğraf atölyeleri düzenlemek
+- Okul, kurum ve firmalardan etkinlik taleplerini toplamak
+
+## Gerçek iletişim bilgileri (dernek)
+- Dernek: Eskişehir FOTON — Fotoğraf Organizasyonları Derneği
+- Telefon: 0 (534) 974 87 61 · 0 (554) 893 03 78
+- E-posta: eskisehir@foton.com.tr
+- Adres: Akarbaşı Mah. Akyıldız Sok. No:33/4 Tepebaşı / Eskişehir
+
+## Sayfalar
+- [Ana sayfa](/): manşet, son haberler, köşe yazarları, Haftanın Karesi, etkinlikler
+- [Haberler](/haberler/) · [Köşe Yazıları](/kose-yazilari/) · [Kadromuz](/kadro/)
+- [Etkinlikler](/etkinlikler/) · [Atölyeler](/atolyeler/) · [Çocuk Atölyeleri](/cocuk/)
+- [Etkinlik Talebi](/etkinlik-talebi/) · [Üye Ol](/uye-ol/) · [Bizimle Yaz](/bizimle-yaz/)
+- [Foto Galeri](/galeri/) · [Hakkımızda](/hakkimizda/) · [Yayın İlkeleri](/yayin-ilkeleri/) · [Künye](/kunye/)
+
+## Notlar
+- Formlar tanıtım modunda çalışır; hiçbir bilgi kaydedilmez veya gönderilmez.
+- Fotoğraflar Unsplash'ten geçici olarak kullanılmış, kredi gerçek fotoğrafçısına verilmiştir.

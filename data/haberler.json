@@ -1,0 +1,443 @@
+{
+  "_not": "ÖRNEK İÇERİK. Yazarlar kurgusaldır; metinler tanıtım amaçlı yazılmıştır ve gerçek bir kurum ya da kişi hakkında haber değildir. tur: haber | foto-haber | kose. manset: ana sayfa manşetindeki sıra (1 = büyük manşet). govde blokları: p, h2, alinti (+kaynak), gorsel (+aciklama), liste.",
+  "yazilar": [
+    {
+      "slug": "foton-medya-yayinda",
+      "tur": "haber",
+      "kategori": "fotograf",
+      "manset": 1,
+      "baslik": "Foton Medya yayında: Fotoğrafçıların kalemi, şehrin hafızası",
+      "spot": "Eskişehir FOTON'un medya projesi Foton Medya'nın tanıtım sürümü yayına açıldı. Platform; fotoğrafçıların haber ve köşe yazısı yayınlayabileceği, atölye ve çocuk etkinliklerinin duyurulacağı ortak bir çatı olacak.",
+      "yazar": "ayse-demirtas",
+      "tarih": "2026-10-16T09:00",
+      "gorsel": "kamera-el",
+      "gorselAciklama": "Foton Medya, fotoğrafçıların ürettiği haberi ve fotoğrafı tek bir çatıda buluşturmayı hedefliyor.",
+      "etiketler": ["Foton Medya", "duyuru", "dernek"],
+      "govde": [
+        { "p": "Şu an okuduğunuz sayfa, Foton Medya'nın tanıtım sürümünün bir parçası. Burada gördüğünüz haberler, yazarlar ve etkinlikler örnek olarak hazırlandı; amaç, gerçek platform hayata geçtiğinde nasıl görüneceğini ve nasıl çalışacağını göstermek." },
+        { "h2": "Neden bir medya platformu?" },
+        { "p": "Fotoğrafçılar her gün şehrin en canlı anlarına tanıklık ediyor; ama bu kareler çoğu zaman telefon galerilerinde ya da sosyal medya akışında kayboluyor. Foton Medya, bu birikimi haber, foto-haber ve köşe yazısına dönüştürmeyi; üreten fotoğrafçıya da görünürlük ve kredi kazandırmayı amaçlıyor." },
+        { "alinti": "Her fotoğrafın altında çekenin adı yazacak. Bizim için bu bir kural değil, bir saygı meselesi.", "kaynak": "Foton Medya Yayın İlkeleri" },
+        { "h2": "Platformda neler olacak?" },
+        { "liste": [
+          "Şehir, Fotoğraf, Kültür-Sanat, Gezi, Tarih, Spor, Yaşam, Sağlık, İş Dünyası ve Doğa-Çevre kategorilerinde haberler",
+          "Foton Muhabirleri'nin foto-haber dizileri ve Köşe Yazarları'nın görüş yazıları",
+          "Temel fotoğrafçılıktan gece çekimine kadar atölyeler, foto-geziler, sergiler ve yarışmalar",
+          "6–17 yaş için ayrı gruplarda çocuk ve genç atölyeleri",
+          "Okul, kurum ve firmalar için etkinlik talebi formu",
+          "Derneğe üyelik başvurusu ve “Bizimle Yaz” başvurusu"
+        ] },
+        { "p": "Tanıtım sürümündeki formlar yalnızca nasıl çalışacaklarını gösteriyor; doldurduğunuz bilgiler kaydedilmiyor. Projeyle ilgili görüş ve önerilerinizi derneğin iletişim adreslerinden paylaşabilirsiniz." }
+      ]
+    },
+    {
+      "slug": "porsuk-sabah-isigi",
+      "tur": "foto-haber",
+      "kategori": "sehir",
+      "manset": 2,
+      "baslik": "Porsuk'un sabah ışığı: Şehrin en fotojenik saatleri",
+      "spot": "Gün doğumundan sonraki ilk saat, Porsuk kıyısında ışığın en yumuşak olduğu zaman. Foto muhabirimiz bir hafta boyunca aynı rotayı yürüdü.",
+      "yazar": "onur-polat",
+      "tarih": "2026-10-15T08:10",
+      "gorsel": "porsuk-kanal",
+      "gorselAciklama": "Sabah saatlerinde Porsuk kıyısı; yürüyüşçüler ve ilk açılan dükkânlar.",
+      "galeri": ["porsuk-kanal", "porsuk-nehir", "kule-agaclar"],
+      "etiketler": ["Porsuk", "sabah ışığı", "foto-haber"],
+      "govde": [
+        { "p": "Şehrin ortasından geçen Porsuk, fotoğrafçılar için yalnızca bir manzara değil; ışığı yansıtan, kadrajı ikiye bölen, insanı ve kenti aynı karede buluşturan bir sahne. Bir hafta boyunca her sabah aynı saatte, aynı rotayı yürüyerek ışığın nasıl değiştiğini izledik." },
+        { "h2": "Altın saatin kısa ömrü" },
+        { "p": "Güneş doğduktan sonraki ilk bir saat, gölgelerin uzun ve sıcak tonların belirgin olduğu zaman dilimi. Suyun yüzeyi bu saatlerde çoğu zaman durgun olduğu için yansımalar da daha net çıkıyor. Saat dokuza doğru ışık sertleşiyor ve kontrast artıyor." },
+        { "gorsel": "porsuk-nehir", "aciklama": "Kıyı boyunca ağaçlar, sonbaharda kadraja renk katıyor." },
+        { "p": "Rotada en çok dikkatimizi çeken şey, aynı noktanın farklı günlerde bambaşka fotoğraflar vermesiydi. Bulutlu bir sabah yumuşak ve tek tonlu bir görüntü verirken, açık bir sabah renklerin doygunlaştığı bir sahneye dönüştü." },
+        { "liste": [
+          "Gün doğumundan 15–20 dakika önce yerinizde olun.",
+          "Suya paralel değil, çapraz bakan açılar arayın; derinlik artar.",
+          "İnsanları kadrajdan kaçırmayın: şehir fotoğrafına ölçek ve hikâye katarlar.",
+          "Yansıma için suya yakın, alçak bir açı deneyin."
+        ] }
+      ]
+    },
+    {
+      "slug": "ahsabin-ritmi",
+      "tur": "haber",
+      "kategori": "kultur-sanat",
+      "manset": 3,
+      "baslik": "Ahşabın ritmi: Odunpazarı'nda çağdaş mimariyi fotoğraflamak",
+      "spot": "Japon mimar Kengo Kuma'nın tasarladığı Odunpazarı Modern Müze'nin ahşap cephesi, çizgi ve ritim arayan fotoğrafçılar için açık hava dersliği gibi.",
+      "yazar": "zeynep-korkmaz",
+      "tarih": "2026-10-14T11:20",
+      "gorsel": "omm-cephe",
+      "gorselAciklama": "Üst üste dizilmiş ahşap çıtalar, ışığın açısına göre farklı gölge desenleri oluşturuyor.",
+      "etiketler": ["mimari fotoğraf", "Odunpazarı", "çizgi ve ritim"],
+      "govde": [
+        { "p": "Mimari fotoğrafçılık, bir binanın ne olduğunu değil, nasıl hissettirdiğini göstermeye çalışır. Odunpazarı'ndaki ahşap çıtalarla örülü müze binası, bu açıdan fotoğrafçılara zengin bir malzeme sunuyor: tekrar eden çizgiler, katmanlı gölgeler ve gökyüzüyle kurulan sade bir karşıtlık." },
+        { "h2": "Tekrar ve kırılma" },
+        { "p": "Tekrar eden öğeler göze ritim duygusu verir; o ritmi bozan tek bir unsur ise fotoğrafın odağı hâline gelir. Bir pencere, bir insan silueti ya da gökyüzündeki tek bir bulut bu işi görebilir." },
+        { "gorsel": "omm-ic", "aciklama": "İç mekânda yukarı bakan bir kadraj, ahşap katmanları bir spirale dönüştürüyor." },
+        { "alinti": "Mimari fotoğrafta en önemli ekipman tripod değil, sabırdır. Doğru ışığı beklemek gerekir.", "kaynak": "Kerem Yalçın, Fotoğraf Editörü" },
+        { "p": "Öğle saatlerinde sert ışık çizgileri belirginleştirir; akşamüstü ise ahşabın sıcak tonlarını öne çıkarır. Geniş açı objektiflerde dikey çizgilerin eğilmemesi için makineyi mümkün olduğunca düz tutmak gerekir." }
+      ]
+    },
+    {
+      "slug": "sazova-sonbahar",
+      "tur": "foto-haber",
+      "kategori": "gezi",
+      "manset": 4,
+      "baslik": "Sazova'da sonbahar: Masal şatosunun renk paleti",
+      "spot": "Sazova Bilim Kültür ve Sanat Parkı, sonbaharda sarı ve kızıl tonlarla bambaşka bir görünüme bürünüyor. Hafta sonu foto-gezisi için hazır bir rota önerdik.",
+      "yazar": "mert-ozturk",
+      "tarih": "2026-10-13T16:40",
+      "gorsel": "sato-sonbahar",
+      "gorselAciklama": "Sonbahar ağaçlarının arasından görünen masal şatosu.",
+      "galeri": ["sato-sonbahar", "sato-kuleler", "sazova-havadan", "masal-sato"],
+      "etiketler": ["Sazova", "sonbahar", "foto-gezi"],
+      "govde": [
+        { "p": "Parkın simgesi hâline gelen masal şatosu, yılın her mevsiminde fotoğraflanıyor; ama sonbahar, kulelerin mavisiyle ağaçların turuncusunu aynı kadrajda buluşturduğu için ayrı bir yere sahip." },
+        { "h2": "Önerilen rota" },
+        { "liste": [
+          "Sabah: Göl kıyısından şatoya bakan geniş açı kareler",
+          "Öğle: Ağaçların altında, yaprakları ön plan olarak kullanan detay çekimleri",
+          "Akşamüstü: Kulelerin batan güneşle aydınlandığı yakın planlar"
+        ] },
+        { "gorsel": "sazova-havadan", "aciklama": "Yukarıdan bakıldığında park, göl ve şato tek bir kompozisyonda birleşiyor." },
+        { "p": "Ön planda bir dal ya da yaprak kullanmak, fotoğrafa derinlik katmanın en kolay yollarından biri. Rengin doygun çıkması için polarize filtre de işe yarar; ancak gökyüzünü fazla koyulaştırmamaya dikkat edin." }
+      ]
+    },
+    {
+      "slug": "carsida-bir-sabah",
+      "tur": "haber",
+      "kategori": "yasam",
+      "manset": 5,
+      "baslik": "Çarşıda bir sabah: Sokak fotoğrafçılığına davet",
+      "spot": "Kepenklerin açıldığı, çayların dağıtıldığı ilk saatler sokak fotoğrafçıları için en samimi anları barındırıyor. Peki insanları fotoğraflarken nelere dikkat etmeli?",
+      "yazar": "elif-arslan",
+      "tarih": "2026-10-12T10:05",
+      "gorsel": "sokak-yasam",
+      "gorselAciklama": "Sabah saatlerinde bir çarşı sokağı.",
+      "etiketler": ["sokak fotoğrafçılığı", "etik", "çarşı"],
+      "govde": [
+        { "p": "Sokak fotoğrafçılığı, planlanmamış anları yakalama sanatı. Çarşının sabah telaşı; esnafın selamlaşması, vitrinlerin düzenlenmesi, ilk müşterinin pazarlığı bu türün en sevilen konuları arasında." },
+        { "h2": "Saygı her şeyden önce gelir" },
+        { "p": "İnsanların fotoğrafını çekerken göz teması kurmak, gülümsemek ve gerekirse izin istemek hem etik hem de çoğu zaman daha iyi fotoğraf için doğru yol. Çocukların fotoğraflarını yayımlamadan önce mutlaka ebeveyn izni alınmalı." },
+        { "alinti": "Fotoğrafını çektiğim kişiye o fotoğrafı gösterebiliyorsam, doğru bir iş yapmışımdır.", "kaynak": "Elif Arslan" },
+        { "liste": [
+          "Geniş açı yerine 35–50 mm arası odak uzaklıkları daha doğal bir bakış verir.",
+          "Bir köşede bekleyip sahnenin size gelmesine izin verin.",
+          "Işığın düştüğü bir alan bulun ve doğru kişinin o ışığa girmesini bekleyin."
+        ] }
+      ]
+    },
+    {
+      "slug": "odunpazari-evleri",
+      "tur": "haber",
+      "kategori": "tarih",
+      "baslik": "Cumbaların arasında: Odunpazarı evlerini fotoğraflamak",
+      "spot": "Renkli cepheleri ve çıkmalarıyla Odunpazarı'nın tarihi evleri, şehrin geçmişine açılan pencereler gibi. Bu dokuyu belgelemek için birkaç öneri.",
+      "yazar": "zeynep-korkmaz",
+      "tarih": "2026-10-11T14:30",
+      "gorsel": "odunpazari-ev",
+      "gorselAciklama": "Ahşap pencereleri ve geniş saçaklarıyla geleneksel konaklar.",
+      "etiketler": ["Odunpazarı", "tarihi doku", "belgeleme"],
+      "govde": [
+        { "p": "Odunpazarı, Osmanlı döneminden kalma sivil mimari örnekleriyle Eskişehir'in en çok fotoğraflanan semtlerinden biri. Cumbalar, ahşap kapılar ve dar sokaklar; hem belgesel hem de sanatsal fotoğraf için zengin bir arka plan sunuyor." },
+        { "h2": "Belgelemek ile güzelleştirmek arasında" },
+        { "p": "Tarihi yapıları fotoğraflarken iki yaklaşım öne çıkar: Yapıyı olduğu gibi, düz ve bozulmadan kayda geçirmek ya da ışığı ve atmosferi öne çıkaran yorumlayıcı kareler üretmek. İkisi de değerli; önemli olan hangisini yaptığınızı bilmek." },
+        { "p": "Arşiv değeri taşıyacak fotoğraflarda cepheyi karşıdan, perspektif bozulması olmadan çekmek ve çekim tarihini not almak ileride çok işe yarar. Bugün sıradan görünen bir kapı, yirmi yıl sonra kaybolmuş bir detayın tek kaydı olabilir." }
+      ]
+    },
+    {
+      "slug": "mobil-fotografcilik-7-kural",
+      "tur": "haber",
+      "kategori": "fotograf",
+      "baslik": "Telefonla iyi fotoğraf: Ekipmandan önce gelen 7 kural",
+      "spot": "Cebinizdeki telefon, doğru kullanıldığında güçlü bir fotoğraf aracı. Fotoğraf editörümüz en sık yapılan hataları ve kolay çözümlerini derledi.",
+      "yazar": "kerem-yalcin",
+      "tarih": "2026-10-10T09:45",
+      "gorsel": "kamera-cekim",
+      "gorselAciklama": "İyi fotoğrafın ilk koşulu, kadraja ne aldığınızı bilmek.",
+      "etiketler": ["mobil fotoğraf", "ipuçları", "temel bilgiler"],
+      "govde": [
+        { "p": "Atölyelerimize katılanların çoğu ilk derste aynı soruyu soruyor: “Hangi makineyi almalıyım?” Cevabımız genellikle aynı: Önce elinizdekiyle bakmayı öğrenin." },
+        { "liste": [
+          "Merceği silin: Bulanık fotoğrafların önemli bir kısmının sebebi parmak izidir.",
+          "Dijital zoom yerine yaklaşın: Ayaklarınız en iyi objektifinizdir.",
+          "Odak ve pozlamayı ekrana dokunarak kendiniz seçin.",
+          "Ufku düz tutun; ızgara çizgilerini açın.",
+          "Işığın yönüne bakın: Konunuzu pencereye ya da güneşe göre konumlayın.",
+          "Arka planı sadeleştirin; gereksiz her şey dikkati dağıtır.",
+          "Aynı sahneden birkaç farklı açı çekin, seçimi sonra yapın."
+        ] },
+        { "p": "Bu kuralların hiçbiri pahalı bir ekipman gerektirmiyor. Temel Fotoğrafçılık Atölyesi'nde bu başlıkların her birini uygulamalı olarak çalışıyoruz." }
+      ]
+    },
+    {
+      "slug": "amator-sahalar",
+      "tur": "foto-haber",
+      "kategori": "spor",
+      "baslik": "Amatör sahaların görünmeyen kahramanları",
+      "spot": "Tribünü olmayan sahalarda, kimsenin izlemediği maçlarda da büyük hikâyeler yazılıyor. Spor muhabirimiz hafta sonu maçlarının peşine düştü.",
+      "yazar": "burak-sen",
+      "tarih": "2026-10-09T19:15",
+      "gorsel": "basketbol",
+      "gorselAciklama": "Mahalle potası: Pek çok sporcunun ilk sahnesi.",
+      "etiketler": ["amatör spor", "spor fotoğrafçılığı"],
+      "govde": [
+        { "p": "Profesyonel maçların ışıkları altında çalışan fotoğrafçılar kadar, mahalle sahalarında ve okul salonlarında deklanşöre basanlar da spor hafızasını oluşturuyor. Bu fotoğraflar; ilk golün sevincini, kaybedilen maçın sessizliğini ve takım ruhunu kayda geçiriyor." },
+        { "h2": "Hareketi dondurmak" },
+        { "p": "Spor fotoğrafında hareketi dondurmak için genellikle 1/500 saniye ve üzeri enstantane hızları tercih edilir. Kapalı salonlarda ışık yetersiz kaldığında ISO'yu yükseltmekten çekinmeyin: Biraz gren, bulanık bir fotoğraftan her zaman iyidir." },
+        { "p": "En iyi kareler çoğu zaman topun olduğu yerde değil; yedek kulübesinde, tribündeki tek bir velinin yüzünde ya da maç sonundaki bir tokalaşmada saklıdır." }
+      ]
+    },
+    {
+      "slug": "fotograf-yuruyusleri",
+      "tur": "haber",
+      "kategori": "saglik",
+      "baslik": "Fotoğraf yürüyüşleri: Hem göze hem bedene iyi geliyor",
+      "spot": "Makinesini alıp yürüyüşe çıkanların sayısı artıyor. Düzenli yürüyüş alışkanlığını keyifli bir uğraşla birleştirmenin yolları.",
+      "yazar": "ceren-aydin",
+      "tarih": "2026-10-08T07:50",
+      "gorsel": "bisiklet",
+      "gorselAciklama": "Ağaçlı yollar, hem yürüyüş hem fotoğraf için ideal rotalar sunuyor.",
+      "etiketler": ["yürüyüş", "sağlıklı yaşam", "foto-gezi"],
+      "govde": [
+        { "p": "Düzenli fiziksel aktivitenin sağlığa faydaları uzun zamandır biliniyor; ama pek çok kişi için asıl zorluk, yürüyüşü bir alışkanlığa dönüştürmek. Fotoğraf, bu noktada güçlü bir motivasyon kaynağı olabiliyor: Her yürüyüş, yeni bir kare arayışına dönüşüyor." },
+        { "h2": "Yavaşlamak ve fark etmek" },
+        { "p": "Fotoğraf yürüyüşü yapanlar, hızlı tempodan çok dikkatle bakmaya odaklanıyor. Bir ağacın gölgesi, bir duvarın dokusu, bir pencerenin önündeki saksı… Yavaşlamak, çevremizi fark etmemizi sağlıyor." },
+        { "liste": [
+          "Rahat ayakkabı ve hafif bir çanta tercih edin.",
+          "Kısa rotalarla başlayın, mesafeyi kademeli artırın.",
+          "Kendinize her yürüyüşte bir tema belirleyin: renkler, gölgeler, kapılar…",
+          "Sağlık durumunuzla ilgili kaygılarınız varsa yeni bir egzersize başlamadan önce hekiminize danışın."
+        ] }
+      ]
+    },
+    {
+      "slug": "ustanin-elleri",
+      "tur": "haber",
+      "kategori": "is-dunyasi",
+      "baslik": "Ustanın elleri: Zanaatkârları fotoğraflamanın incelikleri",
+      "spot": "Lületaşından çömlekçiliğe, şehrin zanaat atölyeleri hem kültürel hem ekonomik bir miras. Bu mirası görünür kılmak için fotoğrafçılara düşen rol büyük.",
+      "yazar": "ceren-aydin",
+      "tarih": "2026-10-07T13:10",
+      "gorsel": "zanaatkar",
+      "gorselAciklama": "Bir zanaat atölyesinde çalışan usta.",
+      "etiketler": ["zanaat", "yerel ekonomi", "portre"],
+      "govde": [
+        { "p": "Eskişehir denince akla gelen ilk zanaatlerden biri lületaşı. Ancak şehirde ahşaptan seramiğe, metalden deriye kadar pek çok usta hâlâ atölyesinde üretmeye devam ediyor. Bu atölyeler, küçük işletmelerin ve yerel ekonominin de önemli bir parçası." },
+        { "gorsel": "comlek", "aciklama": "Eller, zanaat fotoğrafçılığının en güçlü anlatım aracı." },
+        { "h2": "Elleri, aletleri, ışığı izleyin" },
+        { "p": "Zanaatkâr portrelerinde yüz kadar eller de hikâye anlatır. Atölyelerdeki tek yönlü pencere ışığı, dokuları ortaya çıkarmak için çoğu zaman yeterlidir; flaş kullanmak yerine bu ışığı değerlendirmeye çalışın." },
+        { "p": "Çekim öncesinde ustayla sohbet etmek, hem güven ortamı oluşturur hem de hangi anın önemli olduğunu öğrenmenizi sağlar. Fotoğrafları paylaşmadan önce ustanın onayını almayı unutmayın; iş yerinin tanıtımına katkı sunmak isterseniz bunu birlikte planlayın." }
+      ]
+    },
+    {
+      "slug": "kent-kuslari",
+      "tur": "haber",
+      "kategori": "doga-cevre",
+      "baslik": "Kent kuşlarını fotoğraflamak için sabır rehberi",
+      "spot": "Parklar ve nehir kıyıları, şehrin ortasında bile kuş gözlemi için şaşırtıcı fırsatlar sunuyor. Doğa muhabirimiz, kuşları rahatsız etmeden fotoğraflamanın yollarını anlattı.",
+      "yazar": "mert-ozturk",
+      "tarih": "2026-10-06T08:20",
+      "gorsel": "kus",
+      "gorselAciklama": "Dalda tünemiş bir kuş, gökyüzüne karşı siluet olarak.",
+      "etiketler": ["kuş fotoğrafçılığı", "doğa etiği", "park"],
+      "govde": [
+        { "p": "Kuş fotoğrafçılığı uzun objektif kadar sabır da ister. Sabahın erken saatleri kuşların en hareketli olduğu zaman; aynı zamanda ışığın en yumuşak olduğu saatler." },
+        { "h2": "Önce doğa, sonra fotoğraf" },
+        { "liste": [
+          "Yuvalara yaklaşmayın; üreme döneminde rahatsızlık yuvanın terk edilmesine yol açabilir.",
+          "Kuşları uçurmak için ses ya da hareketle ürkütmeyin.",
+          "Yem ile çekme gibi doğal davranışı bozan yöntemlerden kaçının.",
+          "Konum paylaşırken nadir türlerin yerini açık etmeyin."
+        ] },
+        { "p": "Teknik olarak 1/1000 saniye ve üzeri enstantane, uçuştaki kuşu dondurmak için iyi bir başlangıç. Siluet çekimlerinde ise pozlamayı gökyüzüne göre yapmak, kuşun şeklini net bir karaltı olarak öne çıkarır." }
+      ]
+    },
+    {
+      "slug": "siyah-beyazin-donusu",
+      "tur": "haber",
+      "kategori": "kultur-sanat",
+      "baslik": "Siyah-beyazın dönüşü: Genç fotoğrafçılar neden filme geri dönüyor?",
+      "spot": "Dijitalin her şeyi anında sunduğu bir dönemde, banyo kokusu ve bekleme sabrı genç fotoğrafçıları yeniden cezbediyor.",
+      "yazar": "zeynep-korkmaz",
+      "tarih": "2026-10-05T17:00",
+      "gorsel": "sergi-siyah-beyaz",
+      "gorselAciklama": "Kurumaya asılmış siyah-beyaz baskılar.",
+      "etiketler": ["analog", "siyah-beyaz", "sergi"],
+      "govde": [
+        { "p": "Film fotoğrafçılığı, birkaç yıl öncesine kadar nostaljik bir hobi olarak görülüyordu. Bugün ise özellikle genç fotoğrafçılar arasında, sınırlı kare sayısının getirdiği dikkat ve karanlık odanın el emeği yeniden değer kazanıyor." },
+        { "alinti": "Otuz altı kareniz olduğunda her deklanşöre basışınız bir karar hâline geliyor.", "kaynak": "Hasan Erkılıç, köşe yazarı" },
+        { "p": "Siyah-beyaz, rengin dikkat dağıtıcı etkisini ortadan kaldırarak ışığa, biçime ve duyguya odaklanmayı sağlıyor. Bu yüzden pek çok eğitmen, öğrencilerine bir süre yalnızca siyah-beyaz çekmelerini öneriyor." },
+        { "gorsel": "sergi-izleyici", "aciklama": "Baskı fotoğraf, ekranda görülenden farklı bir deneyim sunuyor." }
+      ]
+    },
+    {
+      "slug": "karli-sokaklarda-pozlama",
+      "tur": "haber",
+      "kategori": "sehir",
+      "baslik": "Kış hazırlığı: Karlı sokaklarda doğru pozlama",
+      "spot": "Kar yağdığında fotoğraflar neden griye döner? Kış gelmeden, beyazı beyaz göstermenin basit yollarını hatırlatalım.",
+      "yazar": "onur-polat",
+      "tarih": "2026-10-04T12:00",
+      "gorsel": "karli-yol",
+      "gorselAciklama": "Karla kaplı ağaçlı bir yürüyüş yolu.",
+      "etiketler": ["kış", "pozlama", "ipuçları"],
+      "govde": [
+        { "p": "Makinelerin ışık ölçerleri, sahnenin ortalama olarak orta gri olduğunu varsayar. Her yer beyaz olduğunda ise makine sahneyi fazla parlak sanıp pozlamayı kısar; sonuç, grimsi ve donuk bir kar olur." },
+        { "h2": "Çözüm: Pozlama telafisi" },
+        { "p": "Karlı sahnelerde pozlama telafisini +1 ile +2 EV arasında artırmak, karın beyaz görünmesini sağlar. Histogramı kontrol ederek parlak alanların tamamen patlamadığından emin olun." },
+        { "liste": [
+          "Yedek bataryaları iç cebinizde taşıyın; soğuk bataryayı hızla tüketir.",
+          "Sıcak bir ortama girerken makineyi çantada bekletin; buğulanmayı önler.",
+          "Kar yağışını dondurmak için hızlı, iz bırakması için yavaş enstantane deneyin."
+        ] }
+      ]
+    },
+    {
+      "slug": "ufka-bakan-tepeler",
+      "tur": "foto-haber",
+      "kategori": "gezi",
+      "baslik": "Şehir dışına foto-gezi: Ufka bakan tepeler",
+      "spot": "Kısa bir yolculukla ulaşılan tepeler, sonbaharın son renklerini yakalamak isteyenler için iyi bir kaçış. Foto-gezi notlarımız ve çekim önerilerimiz.",
+      "yazar": "mert-ozturk",
+      "tarih": "2026-10-03T18:30",
+      "gorsel": "dag-manzara",
+      "gorselAciklama": "Ön plandaki flu yapraklar, manzaraya derinlik katıyor.",
+      "galeri": ["dag-manzara", "karli-yol", "kus"],
+      "etiketler": ["foto-gezi", "manzara", "sonbahar"],
+      "govde": [
+        { "p": "Manzara fotoğrafçılığında en sık yapılan hata, her şeyi kadraja sığdırmaya çalışmak. Geniş bir vadi karşısında bile güçlü bir fotoğraf için bir ön plan, bir orta plan ve bir arka plan düşünmek gerekir." },
+        { "p": "Ön plandaki yaprakları bilerek flu bırakmak, izleyicinin gözünü uzaktaki tepelere yönlendirir. Akşamüstü ışığı ise katmanlar arasındaki ton farkını belirginleştirir." },
+        { "h2": "Foto-geziye çıkmadan önce" },
+        { "liste": [
+          "Hava durumunu ve gün batımı saatini kontrol edin.",
+          "Rotanızı ve dönüş saatinizi birine haber verin.",
+          "Arazide çöp bırakmayın, patikaların dışına çıkmayın."
+        ] }
+      ]
+    },
+    {
+      "slug": "matbaadan-ekrana",
+      "tur": "haber",
+      "kategori": "is-dunyasi",
+      "baslik": "Matbaadan ekrana: Yerel yayıncılık nereye gidiyor?",
+      "spot": "Basılı yayıncılığın dönüşümü, yerel haberciliği de yeniden şekillendiriyor. Fotoğrafçılar ve yerel medya için yeni iş birliği modelleri neler olabilir?",
+      "yazar": "ceren-aydin",
+      "tarih": "2026-10-02T15:40",
+      "gorsel": "matbaa",
+      "gorselAciklama": "Tipo baskı: Yayıncılığın el emeği geçmişinden bir sahne.",
+      "etiketler": ["yerel medya", "yayıncılık", "iş birliği"],
+      "govde": [
+        { "p": "Bir zamanlar sabahları kapıya bırakılan yerel gazeteler, bugün büyük ölçüde ekranlarda okunuyor. Bu dönüşüm, haber üretim biçimini olduğu kadar yerel haberciliğin ekonomisini de değiştiriyor." },
+        { "h2": "Dernek modeli" },
+        { "p": "Foton Medya'nın da dayandığı fikir basit: Şehirde zaten fotoğraf üreten yüzlerce kişi var. Bu üretimi yayın ilkeleri, editör denetimi ve kredi sistemiyle bir araya getiren yapılar, yerel haberciliğe hem içerik hem güvenilirlik kazandırabilir." },
+        { "p": "Sponsorluk, kurumsal atölyeler ve etkinlik iş birlikleri, bu tür yapıların sürdürülebilirliği için öne çıkan modeller arasında. Kurumunuzla birlikte çalışmak isterseniz iletişim sayfamızdaki iş birliği bölümüne göz atabilirsiniz." }
+      ]
+    },
+    {
+      "slug": "fotograf-neden-sararir",
+      "tur": "kose",
+      "kategori": "fotograf",
+      "baslik": "Bir fotoğraf neden sararır?",
+      "spot": "Çekmecedeki eski fotoğraflar sararır, solar, kıvrılır. Onları korumak için uzman olmaya gerek yok; biraz özen yeter.",
+      "yazar": "hasan-erkilic",
+      "tarih": "2026-10-15T07:00",
+      "etiketler": ["arşiv", "analog", "koruma"],
+      "govde": [
+        { "p": "Geçen hafta bir okurumuz, babaannesinden kalan bir kutu fotoğrafla atölyeye geldi. Kutuyu açtığımızda hepimizin bildiği o koku yayıldı: kâğıt, zaman ve biraz da nem." },
+        { "p": "Fotoğrafların sararmasının en yaygın sebepleri ışık, nem ve sıcaklık değişimleri. Kartondan yapılmış asitli kutular, plastik albüm yaprakları ve yapışkanlı sayfalar da zamanla fotoğrafa zarar verebiliyor." },
+        { "p": "Önerim basit: Fotoğrafları karanlık, serin ve kuru bir yerde, asitsiz zarflar içinde saklayın. Ve en önemlisi, onları dijitalleştirin. Taranmış bir kopya, orijinalin başına bir şey geldiğinde elinizde kalan tek hatıra olabilir." },
+        { "alinti": "Fotoğraf, unutmaya karşı açılmış küçük bir davadır. Onu kaybetmeyelim.", "kaynak": "Gümüş Tuzlar" }
+      ]
+    },
+    {
+      "slug": "kopruler-sehri",
+      "tur": "kose",
+      "kategori": "sehir",
+      "baslik": "Köprülerin şehrinde yaşamak",
+      "spot": "Porsuk'un iki yakasını birleştiren köprüler, bu şehirde yalnızca bir geçiş yolu değil; buluşma noktası, fotoğraf karesi, hatıra.",
+      "yazar": "nilgun-sevim",
+      "tarih": "2026-10-14T07:00",
+      "etiketler": ["Porsuk", "kent kültürü"],
+      "govde": [
+        { "p": "Çocukken köprülerin sayısını bilmez, ama hangisinden geçersek eve daha çabuk varacağımızı bilirdik. Büyüdükçe köprüler başka anlamlar kazandı: İlk randevular, uzun akşam yürüyüşleri, suya bakarak susulan dakikalar." },
+        { "p": "Bugün aynı köprülerde, elinde telefonuyla gün batımını kaydeden gençler görüyorum. Bazen içimden, o fotoğrafların yirmi yıl sonra bu şehrin hafızası olacağını söylemek geliyor." },
+        { "p": "Bir şehir, en çok fotoğraflandığı yerlerle hatırlanır. Belki de bu yüzden köprülerimiz, Eskişehir'in hem en kalabalık hem de en kişisel mekânları." }
+      ]
+    },
+    {
+      "slug": "ekipman-mi-bakis-mi",
+      "tur": "kose",
+      "kategori": "fotograf",
+      "baslik": "Ekipman mı, bakış mı?",
+      "spot": "Her yeni model tanıtıldığında aynı tartışma başlıyor. Oysa fotoğrafın ne kadar iyi olduğu, çoğu zaman makinenin değil gözün meselesi.",
+      "yazar": "tolga-ucar",
+      "tarih": "2026-10-13T07:00",
+      "etiketler": ["ekipman", "fotoğraf eğitimi"],
+      "govde": [
+        { "p": "Atölyelerde en çok duyduğum cümle: “Makinem iyi olsa daha güzel çekerdim.” Kimi zaman haklı bir cümle bu; ama çoğu zaman bir bahane." },
+        { "p": "İyi bir ekipman size teknik olarak daha temiz bir dosya verir: daha az gren, daha geniş dinamik aralık, daha hızlı odak. Ama neyi, nereden, ne zaman çekeceğinize karar vermez." },
+        { "p": "Önerim şu: Bir ay boyunca yalnızca tek bir sabit odaklı objektifle ya da sadece telefonunuzla çekin. Sınırlamanın yaratıcılığı nasıl beslediğine şaşıracaksınız." }
+      ]
+    },
+    {
+      "slug": "cocuga-fotograf-makinesi",
+      "tur": "kose",
+      "kategori": "yasam",
+      "baslik": "Çocuğa fotoğraf makinesi vermek",
+      "spot": "Çocukların çektiği fotoğraflar, dünyayı onların boyundan görmemizi sağlar. Peki onlara bu aracı nasıl vermeli?",
+      "yazar": "melis-karaca",
+      "tarih": "2026-10-12T07:00",
+      "etiketler": ["çocuk", "sanat eğitimi"],
+      "govde": [
+        { "p": "Çocuk atölyelerimizin ilk dersinde makineleri dağıttığımızda, çoğu çocuk önce ayakkabılarını fotoğraflıyor. Sonra arkadaşının yüzünü, sonra pencereden görünen ağacı. Bu sıralama bana hep çok şey anlatır: Önce kendine, sonra ötekine, sonra dünyaya bakmak." },
+        { "p": "Çocuğa fotoğraf makinesi vermek, ona bir “bakma izni” vermektir. Burada amaç teknik kusursuzluk değil; merak, gözlem ve anlatma becerisi." },
+        { "p": "Veliler için tek bir ricam var: Çocuğunuzun fotoğraflarını eleştirmeden önce, ona neden o kareyi çektiğini sorun. Cevap, çoğu zaman fotoğraftan daha güzeldir." }
+      ]
+    },
+    {
+      "slug": "aile-albumu-sehir-arsivi",
+      "tur": "kose",
+      "kategori": "tarih",
+      "baslik": "Aile albümü bir şehir arşividir",
+      "spot": "Bir düğün fotoğrafının arka planındaki dükkân tabelası, bugün o sokağın tek belgesi olabilir.",
+      "yazar": "ilker-dogan",
+      "tarih": "2026-10-11T07:00",
+      "etiketler": ["arşiv", "kent tarihi", "aile albümü"],
+      "govde": [
+        { "p": "Eski fotoğraf toplamaya başladığımda yalnızca ünlü binaların, meydanların fotoğraflarını arardım. Zamanla anladım ki asıl hazine, aile albümlerinin arka planlarında saklı." },
+        { "p": "Bir doğum günü fotoğrafındaki duvar kâğıdı, bir bayram ziyaretindeki otomobil, bir okul fotoğrafının arkasındaki bahçe… Bunların hepsi, resmi arşivlerin kaydetmediği gündelik hayatın izleri." },
+        { "p": "Elinizde eski fotoğraflar varsa, onları atmadan önce bir kez daha düşünün. Hatta bize yazın: Gerçek sürümde, okurlarımızın aile albümlerinden derlenen bir şehir hafızası köşesi açmayı planlıyoruz." }
+      ]
+    },
+    {
+      "slug": "histogramdan-korkmayin",
+      "tur": "kose",
+      "kategori": "fotograf",
+      "baslik": "Histogramdan korkmayın",
+      "spot": "Ekranın köşesindeki o küçük dağ grafiği, aslında fotoğrafçının en dürüst danışmanı.",
+      "yazar": "tolga-ucar",
+      "tarih": "2026-10-06T07:00",
+      "etiketler": ["pozlama", "teknik"],
+      "govde": [
+        { "p": "Makinenin ekranı yalan söyler: Güneşli bir günde karanlık, karanlık bir odada parlak görünür. Histogram ise ne gördüğünü değil, ne kaydettiğini gösterir." },
+        { "p": "Grafiğin sol tarafı gölgeleri, sağ tarafı parlak alanları temsil eder. Grafik iki uca yapışıyorsa o bölgelerde detay kaybediyorsunuz demektir." },
+        { "p": "İdeal bir histogram yoktur; karlı bir sahne doğal olarak sağa, gece çekimi sola yaslanır. Önemli olan, grafiğe bakıp bunun sahneye uygun olup olmadığına karar verebilmek." }
+      ]
+    },
+    {
+      "slug": "sonbaharin-ilk-sisi",
+      "tur": "kose",
+      "kategori": "sehir",
+      "baslik": "Sonbaharın ilk sisi",
+      "spot": "Bir sabah uyanıyorsunuz ve şehir yumuşamış. Sis, bildiğimiz sokakları yeniden keşfetmek için bir davet.",
+      "yazar": "nilgun-sevim",
+      "tarih": "2026-10-07T07:00",
+      "etiketler": ["sonbahar", "kent"],
+      "govde": [
+        { "p": "Sisli sabahlarda şehir sesini kısar gibi olur. Uzaktaki binalar kaybolur, yakındaki ağaçlar bir tiyatro dekoru gibi öne çıkar." },
+        { "p": "Fotoğrafçı arkadaşlarım sisi çok sever; çünkü sis, kadrajı kendiliğinden sadeleştirir. Benim içinse sis, alışkanlıklarımızdan sıyrılıp şehre ilk kez bakıyormuş gibi bakmanın fırsatı." }
+      ]
+    }
+  ]
+}

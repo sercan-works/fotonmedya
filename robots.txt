@@ -1,0 +1,7 @@
+# Foton Medya — tanıtım sürümü
+# Sayfalar taramaya açık bırakıldı; çünkü arama motorlarının her sayfadaki "noindex" etiketini
+# görebilmesi gerekir. Taramayı burada engellemek, adreslerin içeriksiz olarak dizine girmesine yol açabilir.
+# Gerçek yayına geçerken sitemap.xml eklenip aşağıya yazılmalıdır.
+User-agent: *
+Allow: /
+Disallow: /partials/

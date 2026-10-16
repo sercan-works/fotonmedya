@@ -1,0 +1,125 @@
+<!-- Etkinlik kayıt formu — etkinlik sayfasına htmx ile yüklenir.
+     app.js seçili etkinliğe göre alanları açar: çocuk etkinliğinde veli bilgileri ve fotoğraf yayın izni,
+     yarışmada fotoğraf bağlantıları ve telif onayı. Tanıtım sürümünde gönderim yapılmaz. -->
+<div class="form-kutu">
+  <h2 id="kayit-baslik">Kayıt formu</h2>
+  <p class="form-aciklama">Yıldızlı alanlar zorunludur. Kayıt sonrası etkinlikle ilgili ayrıntılar size iletilir.</p>
+  <form class="form" data-form data-kayit-formu data-basari-metin="Gerçek sürümde kaydınız alınacak ve etkinlikten önce size hatırlatma gönderilecek." aria-labelledby="kayit-baslik">
+    <div class="secili-etkinlik" data-secili-etkinlik><svg class="ikon" aria-hidden="true"><use href="#i-takvim"/></svg><div><strong>Etkinlik bilgisi yükleniyor…</strong></div></div>
+    <input type="hidden" name="etkinlik" data-ozet="Etkinlik">
+
+    <div class="bilgi-kutu bilgi-kutu--uyari" data-dolu-not hidden style="margin:0">
+      <svg class="ikon" aria-hidden="true"><use href="#i-uyari"/></svg>
+      <p>Bu etkinliğin kontenjanı doldu. Formu doldurursanız <strong>yedek listeye</strong> alınırsınız; yer açılırsa sırayla aranırsınız.</p>
+    </div>
+
+    <div class="form-satir">
+      <div class="alan">
+        <label for="k-ad" data-etiket-cocuk="Veli adı soyadı ">Ad soyad <span class="zorunlu" aria-hidden="true">*</span></label>
+        <input id="k-ad" name="ad" type="text" autocomplete="name" maxlength="80" required>
+        <span class="alan-hata" aria-live="polite"></span>
+      </div>
+      <div class="alan">
+        <label for="k-tel" data-etiket-cocuk="Veli telefonu ">Telefon <span class="zorunlu" aria-hidden="true">*</span></label>
+        <input id="k-tel" name="telefon" type="tel" inputmode="tel" autocomplete="tel" maxlength="20" placeholder="05XX XXX XX XX" required>
+        <span class="alan-hata" aria-live="polite"></span>
+      </div>
+    </div>
+    <div class="form-satir">
+      <div class="alan">
+        <label for="k-eposta">E-posta <span class="zorunlu" aria-hidden="true">*</span></label>
+        <input id="k-eposta" name="eposta" type="email" autocomplete="email" maxlength="120" required>
+        <span class="alan-hata" aria-live="polite"></span>
+      </div>
+      <div class="alan" data-etkinlik-turu-haric="cocuk">
+        <label for="k-uye">Üyelik durumu</label>
+        <select id="k-uye" name="uyelik">
+          <option value="">Seçin</option>
+          <option>Eskişehir FOTON üyesiyim</option>
+          <option>Üye değilim</option>
+          <option>Üyelik başvurum var</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Yalnızca çocuk etkinliklerinde -->
+    <fieldset class="form-grup form-grup--cocuk" data-etkinlik-turu="cocuk" hidden>
+      <legend class="form-grup-baslik"><svg class="ikon" aria-hidden="true"><use href="#i-gulus"/></svg> Çocuk bilgileri ve veli onayı</legend>
+      <div class="form-satir">
+        <div class="alan">
+          <label for="k-cocuk-ad">Çocuğun adı soyadı <span class="zorunlu" aria-hidden="true">*</span></label>
+          <input id="k-cocuk-ad" name="cocuk_ad" type="text" maxlength="80" required>
+          <span class="alan-hata" aria-live="polite"></span>
+        </div>
+        <div class="alan">
+          <label for="k-cocuk-yas">Çocuğun yaşı <span class="zorunlu" aria-hidden="true">*</span></label>
+          <input id="k-cocuk-yas" name="cocuk_yas" type="number" inputmode="numeric" min="6" max="17" required>
+          <span class="alan-hata" aria-live="polite"></span>
+        </div>
+      </div>
+      <div class="alan">
+        <label for="k-acil">Acil durumda ulaşılacak ikinci kişi</label>
+        <input id="k-acil" name="acil_kisi" type="text" maxlength="120" placeholder="Ad soyad ve telefon">
+      </div>
+      <div class="alan">
+        <label for="k-saglik">Sağlık / alerji notu</label>
+        <textarea id="k-saglik" name="saglik" maxlength="500" style="min-height:80px"></textarea>
+        <span class="ipucu">İsteğe bağlı. Yalnızca etkinlik süresince eğitmenlerle paylaşılır, sonra silinir.</span>
+      </div>
+      <fieldset class="alan">
+        <legend>Fotoğraf yayın izni <span class="zorunlu" aria-hidden="true">*</span></legend>
+        <div class="secimler secimler--genis">
+          <label class="secim"><input type="radio" name="foto_izin" value="evet" required data-hata="Lütfen fotoğraf yayın izni için bir seçim yapın."><span>İzin veriyorum<small>Atölyede çekilen ve çocuğumun göründüğü fotoğraflar Foton Medya’da ve derneğin hesaplarında yayımlanabilir.</small></span></label>
+          <label class="secim"><input type="radio" name="foto_izin" value="hayir" required><span>İzin vermiyorum<small>Çocuğumun yüzü tanınacak şekilde fotoğraf yayımlanmaz. Bu seçim katılımı etkilemez.</small></span></label>
+        </div>
+        <span class="alan-hata" aria-live="polite"></span>
+      </fieldset>
+      <div class="alan">
+        <label class="onay"><input type="checkbox" name="veli_onay" required data-ozet="Veli onayı" data-hata="Kayıt için veli onayı gerekli."><span>Çocuğun velisi ya da yasal temsilcisiyim; atölyeye katılmasına onay veriyorum. Atölye sonunda çocuğu ben ya da yukarıda belirttiğim kişi teslim alacak.</span></label>
+        <span class="alan-hata" aria-live="polite"></span>
+      </div>
+    </fieldset>
+
+    <!-- Yalnızca yarışmalarda -->
+    <fieldset class="form-grup" data-etkinlik-turu="yarisma" hidden>
+      <legend class="form-grup-baslik"><svg class="ikon" aria-hidden="true"><use href="#i-odul"/></svg> Yarışma katılımı</legend>
+      <div class="alan">
+        <label for="k-foto">Fotoğraf bağlantıları <span class="zorunlu" aria-hidden="true">*</span></label>
+        <textarea id="k-foto" name="foto_baglantilari" maxlength="1000" required placeholder="Her satıra bir bağlantı — en fazla 3 fotoğraf" style="min-height:90px"></textarea>
+        <span class="ipucu">Gerçek sürümde fotoğraflar doğrudan yüklenecek.</span>
+        <span class="alan-hata" aria-live="polite"></span>
+      </div>
+      <div class="alan">
+        <label for="k-foto-bilgi">Fotoğrafların adları, çekim yeri ve tarihi</label>
+        <textarea id="k-foto-bilgi" name="foto_bilgi" maxlength="1000" style="min-height:80px"></textarea>
+      </div>
+      <div class="alan">
+        <label class="onay"><input type="checkbox" name="telif_onay" required data-ozet="Telif ve katılım koşulları" data-hata="Katılım için bu onay gerekli."><span>Fotoğrafların bana ait olduğunu, fotoğraflarda tanınabilir kişilerin iznini aldığımı ve seçilmesi hâlinde adımla yayımlanabileceğini kabul ediyorum. Telif hakkı bende kalır (FSEK).</span></label>
+        <span class="alan-hata" aria-live="polite"></span>
+      </div>
+    </fieldset>
+
+    <fieldset class="alan" data-etkinlik-turu-haric="cocuk,yarisma">
+      <legend>Fotoğraf deneyiminiz</legend>
+      <div class="secimler secimler--kucuk">
+        <label class="secim"><input type="radio" name="deneyim" value="yeni"><span>Yeni başlıyorum</span></label>
+        <label class="secim"><input type="radio" name="deneyim" value="temel"><span>Temel bilgim var</span></label>
+        <label class="secim"><input type="radio" name="deneyim" value="deneyimli"><span>Deneyimliyim</span></label>
+      </div>
+    </fieldset>
+
+    <div class="alan">
+      <label for="k-not">Notunuz</label>
+      <textarea id="k-not" name="not" maxlength="500" style="min-height:80px" placeholder="Özel bir ihtiyacınız ya da sorunuz varsa yazın."></textarea>
+    </div>
+    <div class="alan">
+      <label class="onay"><input type="checkbox" name="kvkk" required data-ozet="KVKK aydınlatma metni" data-hata="Devam etmek için aydınlatma metnini okuduğunuzu onaylayın."><span><a href="/kvkk-aydinlatma-metni/" target="_blank">KVKK aydınlatma metnini</a> okudum; kaydımla ilgili benimle iletişime geçilmesini kabul ediyorum.</span></label>
+      <span class="alan-hata" aria-live="polite"></span>
+    </div>
+
+    <div class="form-alt">
+      <small>Tanıtım sürümü: bilgileriniz kaydedilmez.</small>
+      <button class="btn btn--birincil" type="submit">Kaydı tamamla</button>
+    </div>
+  </form>
+</div>

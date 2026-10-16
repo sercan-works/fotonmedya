@@ -1,0 +1,41 @@
+{
+  "_not": "Galeri ve Haftanın Karesi. Tanıtım sürümünde fotoğraflar Unsplash'tendir ve kredi gerçek fotoğrafçıya verilir. Gerçek sürümde üyelerin fotoğraflarıyla değiştirilecek. tema: sehir | doga | mimari | sokak | portre | etkinlik",
+  "haftaninKaresi": {
+    "gorsel": "kus",
+    "hafta": "42. hafta · 2026",
+    "baslik": "Dalda bekleyiş",
+    "not": "Seçici kurulun notu: Sade bir kompozisyon, güçlü bir siluet ve gökyüzünün derin mavisi. Kadrajdaki boşluk, kuşun yalnızlığını anlatıyor."
+  },
+  "gecmisKareler": [
+    { "gorsel": "sazova-havadan", "hafta": "41. hafta", "baslik": "Gün batımında park" },
+    { "gorsel": "tripod-gece", "hafta": "40. hafta", "baslik": "Gecenin bekçisi" },
+    { "gorsel": "porsuk-kanal", "hafta": "39. hafta", "baslik": "Kıyıda sabah" }
+  ],
+  "temalar": [
+    { "slug": "sehir", "ad": "Şehir" },
+    { "slug": "mimari", "ad": "Mimari" },
+    { "slug": "doga", "ad": "Doğa" },
+    { "slug": "sokak", "ad": "Sokak" },
+    { "slug": "portre", "ad": "Portre" }
+  ],
+  "fotograflar": [
+    { "gorsel": "sato-sonbahar", "tema": "mimari", "baslik": "Sonbahar şatosu" },
+    { "gorsel": "porsuk-kanal", "tema": "sehir", "baslik": "Kıyıda sabah" },
+    { "gorsel": "kus", "tema": "doga", "baslik": "Dalda bekleyiş" },
+    { "gorsel": "omm-cephe", "tema": "mimari", "baslik": "Ahşabın ritmi" },
+    { "gorsel": "sokak-yasam", "tema": "sokak", "baslik": "Çarşıya giden yol" },
+    { "gorsel": "zanaatkar", "tema": "portre", "baslik": "Ustanın elleri" },
+    { "gorsel": "masal-sato", "tema": "mimari", "baslik": "Masal kuleleri" },
+    { "gorsel": "dag-manzara", "tema": "doga", "baslik": "Ufka bakış" },
+    { "gorsel": "porsuk-nehir", "tema": "sehir", "baslik": "Yeşil kıyı" },
+    { "gorsel": "cocuk-kamera-2", "tema": "portre", "baslik": "Genç objektif" },
+    { "gorsel": "omm-ic", "tema": "mimari", "baslik": "Işığa doğru" },
+    { "gorsel": "istiklal-tramvay", "tema": "sokak", "baslik": "Kalabalığın içinden" },
+    { "gorsel": "karli-yol", "tema": "doga", "baslik": "İlk kar" },
+    { "gorsel": "tugla-kule", "tema": "sehir", "baslik": "Meydan" },
+    { "gorsel": "comlek", "tema": "portre", "baslik": "Çarkın başında" },
+    { "gorsel": "sazova-havadan", "tema": "doga", "baslik": "Gün batımında park" },
+    { "gorsel": "odunpazari-ev", "tema": "mimari", "baslik": "Konak pencereleri" },
+    { "gorsel": "fotografci-siluet", "tema": "portre", "baslik": "Siluet" }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "_not": "ÖRNEK KADRO. Buradaki isimlerin tamamı kurgusaldır; gerçek kişilerle ilgisi yoktur. Profillerde fotoğraf yerine baş harf rozeti gösterilir. rol: editor | muhabir | kose. egitmen: true olanlar etkinlik sayfalarında eğitmen olarak görünebilir.",
+  "kisiler": [
+    {
+      "slug": "ayse-demirtas",
+      "ad": "Ayşe Demirtaş",
+      "rol": "editor",
+      "unvan": "Yayın Editörü",
+      "alanlar": ["sehir", "kultur-sanat"],
+      "renk": "#10283c",
+      "bio": "Yerel gazetecilikte yirmi yıla yakın deneyimi var. Foton Medya'da gelen her haberin doğruluğunu, dilini ve yayın ilkelerine uygunluğunu kontrol eden ekibin başında."
+    },
+    {
+      "slug": "kerem-yalcin",
+      "ad": "Kerem Yalçın",
+      "rol": "editor",
+      "unvan": "Fotoğraf Editörü",
+      "alanlar": ["fotograf"],
+      "renk": "#2070b8",
+      "egitmen": true,
+      "bio": "Belgesel fotoğrafçı ve eğitmen. Haberlerde kullanılan fotoğrafların seçiminden, kredilerinden ve fotoğraf etiğinden sorumlu. Temel fotoğrafçılık atölyelerini yürütüyor."
+    },
+    {
+      "slug": "onur-polat",
+      "ad": "Onur Polat",
+      "rol": "muhabir",
+      "unvan": "Foto Muhabiri",
+      "alanlar": ["sehir", "fotograf"],
+      "renk": "#0a7aa0",
+      "bio": "Şehrin gündelik hâlini sabahın ilk ışığında fotoğraflamayı seviyor. Foto-haber dizilerinin çoğu onun objektifinden çıkıyor."
+    },
+    {
+      "slug": "elif-arslan",
+      "ad": "Elif Arslan",
+      "rol": "muhabir",
+      "unvan": "Muhabir",
+      "alanlar": ["yasam", "sehir"],
+      "renk": "#be185d",
+      "bio": "Çarşılar, mahalleler ve insan hikâyeleri peşinde. Sokak fotoğrafçılığını gazetecilikle birleştiriyor."
+    },
+    {
+      "slug": "zeynep-korkmaz",
+      "ad": "Zeynep Korkmaz",
+      "rol": "muhabir",
+      "unvan": "Kültür-Sanat Muhabiri",
+      "alanlar": ["kultur-sanat", "tarih"],
+      "renk": "#7c3aed",
+      "bio": "Mimarlık tarihi okudu. Sergileri, müzeleri ve şehrin tarihi dokusunu fotoğraf ve yazıyla belgeliyor."
+    },
+    {
+      "slug": "mert-ozturk",
+      "ad": "Mert Öztürk",
+      "rol": "muhabir",
+      "unvan": "Gezi ve Doğa Muhabiri",
+      "alanlar": ["gezi", "doga-cevre"],
+      "renk": "#0f766e",
+      "egitmen": true,
+      "bio": "Doğa fotoğrafçısı ve foto-gezi rehberi. Kuş gözlemi ve uzun yürüyüşler en sevdiği konular."
+    },
+    {
+      "slug": "burak-sen",
+      "ad": "Burak Şen",
+      "rol": "muhabir",
+      "unvan": "Spor Muhabiri",
+      "alanlar": ["spor"],
+      "renk": "#c2410c",
+      "bio": "Amatör sahalardan salon sporlarına kadar hareketli anları yakalamaya çalışan bir spor fotoğrafçısı."
+    },
+    {
+      "slug": "ceren-aydin",
+      "ad": "Ceren Aydın",
+      "rol": "muhabir",
+      "unvan": "Muhabir",
+      "alanlar": ["saglik", "is-dunyasi"],
+      "renk": "#15803d",
+      "bio": "Sağlıklı yaşam ve yerel ekonomi üzerine yazıyor. Zanaatkârların ve küçük işletmelerin hikâyelerini anlatmayı seviyor."
+    },
+    {
+      "slug": "hasan-erkilic",
+      "ad": "Hasan Erkılıç",
+      "rol": "kose",
+      "unvan": "Köşe Yazarı",
+      "koseAdi": "Gümüş Tuzlar",
+      "alanlar": ["fotograf", "tarih"],
+      "renk": "#9a5b13",
+      "bio": "Kırk yıldır fotoğraf çekiyor; filmden dijitale geçişi bizzat yaşadı. Fotoğraf tarihi ve analog teknikler üzerine yazıyor."
+    },
+    {
+      "slug": "nilgun-sevim",
+      "ad": "Nilgün Sevim",
+      "rol": "kose",
+      "unvan": "Köşe Yazarı",
+      "koseAdi": "Porsuk Notları",
+      "alanlar": ["sehir", "yasam"],
+      "renk": "#1d5fa8",
+      "bio": "Eskişehir'de doğup büyüdü. Şehrin değişen yüzünü, köprülerini ve insanlarını yazıyor."
+    },
+    {
+      "slug": "tolga-ucar",
+      "ad": "Tolga Uçar",
+      "rol": "kose",
+      "unvan": "Köşe Yazarı",
+      "koseAdi": "Diyafram",
+      "alanlar": ["fotograf"],
+      "renk": "#0f172a",
+      "egitmen": true,
+      "bio": "Fotoğraf eğitmeni. Teknik konuları sade bir dille anlatmayı, ekipmandan çok bakışı konuşmayı seviyor. Gece ve uzun pozlama atölyelerini yürütüyor."
+    },
+    {
+      "slug": "melis-karaca",
+      "ad": "Melis Karaca",
+      "rol": "kose",
+      "unvan": "Köşe Yazarı",
+      "koseAdi": "Kadraj Dışı",
+      "alanlar": ["kultur-sanat"],
+      "renk": "#6d28d9",
+      "egitmen": true,
+      "bio": "Görsel sanatlar öğretmeni. Sergiler, sanat eğitimi ve çocuklarla fotoğraf üzerine yazıyor; çocuk atölyelerinin eğitmenlerinden."
+    },
+    {
+      "slug": "ilker-dogan",
+      "ad": "İlker Doğan",
+      "rol": "kose",
+      "unvan": "Köşe Yazarı",
+      "koseAdi": "Eski Fotoğraflar",
+      "alanlar": ["tarih"],
+      "renk": "#57534e",
+      "bio": "Aile albümleri ve eski kent fotoğrafları koleksiyoncusu. Her yazısında bir fotoğrafın arkasındaki hikâyeyi arıyor."
+    }
+  ]
+}

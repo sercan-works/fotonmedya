@@ -1,0 +1,22 @@
+<!-- Bülten aboneliği — htmx ile yüklenir (hx-get="/partials/form-bulten.html"). Tanıtım sürümünde gönderim yapılmaz. -->
+<div class="bulten">
+  <div>
+    <span class="ust-yazi">Bülten</span>
+    <h2>Haftanın haberleri ve etkinlikleri e-postanızda</h2>
+    <p>Her cuma: öne çıkan haberler, Haftanın Karesi ve yaklaşan atölyeler. İstediğiniz zaman abonelikten çıkabilirsiniz.</p>
+  </div>
+  <form class="bulten-form" data-form data-kisa data-basari-baslik="Abonelik formunuz eksiksiz" data-basari-metin="Gerçek sürümde e-posta adresinize bir onay bağlantısı gönderilecek." aria-label="Bülten aboneliği">
+    <div class="alan">
+      <label class="gorunmez" for="bulten-eposta">E-posta adresiniz</label>
+      <div class="bulten-satir">
+        <input id="bulten-eposta" name="eposta" type="email" autocomplete="email" placeholder="E-posta adresiniz" required data-hata="Abone olmak için e-posta adresinizi yazın.">
+        <button class="btn btn--birincil" type="submit">Abone ol</button>
+      </div>
+      <span class="alan-hata" aria-live="polite"></span>
+    </div>
+    <div class="alan">
+      <label class="onay"><input type="checkbox" name="bulten_onay" required data-ozet="Bülten açık rızası" data-hata="Abonelik için onay vermeniz gerekiyor."><span>Foton Medya bülteninin e-posta adresime gönderilmesine izin veriyorum. <a href="/kvkk-aydinlatma-metni/">Aydınlatma metni</a></span></label>
+      <span class="alan-hata" aria-live="polite"></span>
+    </div>
+  </form>
+</div>

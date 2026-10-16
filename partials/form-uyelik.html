@@ -1,0 +1,120 @@
+<!-- Üyelik başvuru formu — htmx ile yüklenir. Tanıtım sürümünde gönderim yapılmaz. -->
+<div class="form-kutu">
+  <h2 id="uyelik-baslik">Üyelik başvurusu</h2>
+  <p class="form-aciklama">Başvurunuz dernek yönetim kurulu tarafından değerlendirilir ve sonucu size bildirilir. Yıldızlı alanlar zorunludur.</p>
+  <form class="form" data-form data-basari-baslik="Başvuru formunuz eksiksiz" data-basari-metin="Gerçek sürümde başvurunuz derneğe iletilecek ve tanışma görüşmesi için sizi arayacağız." aria-labelledby="uyelik-baslik">
+    <div class="form-satir">
+      <div class="alan">
+        <label for="u-ad">Ad soyad <span class="zorunlu" aria-hidden="true">*</span></label>
+        <input id="u-ad" name="ad" type="text" autocomplete="name" maxlength="80" required>
+        <span class="alan-hata" aria-live="polite"></span>
+      </div>
+      <div class="alan">
+        <label for="u-yil">Doğum yılı <span class="zorunlu" aria-hidden="true">*</span></label>
+        <input id="u-yil" name="dogum_yili" type="number" inputmode="numeric" min="1925" max="2008" placeholder="Örn. 1990" required>
+        <span class="ipucu">18 yaşından küçükler için <a href="/cocuk/">çocuk ve genç atölyeleri</a>.</span>
+        <span class="alan-hata" aria-live="polite"></span>
+      </div>
+    </div>
+    <div class="form-satir">
+      <div class="alan">
+        <label for="u-tel">Telefon <span class="zorunlu" aria-hidden="true">*</span></label>
+        <input id="u-tel" name="telefon" type="tel" inputmode="tel" autocomplete="tel" maxlength="20" placeholder="05XX XXX XX XX" required>
+        <span class="alan-hata" aria-live="polite"></span>
+      </div>
+      <div class="alan">
+        <label for="u-eposta">E-posta <span class="zorunlu" aria-hidden="true">*</span></label>
+        <input id="u-eposta" name="eposta" type="email" autocomplete="email" maxlength="120" required>
+        <span class="alan-hata" aria-live="polite"></span>
+      </div>
+    </div>
+    <div class="form-satir">
+      <div class="alan">
+        <label for="u-meslek">Meslek</label>
+        <input id="u-meslek" name="meslek" type="text" maxlength="80" autocomplete="organization-title">
+      </div>
+      <div class="alan">
+        <label for="u-ilce">Yaşadığınız yer</label>
+        <select id="u-ilce" name="yer">
+          <option value="">Seçin</option>
+          <option>Odunpazarı</option>
+          <option>Tepebaşı</option>
+          <option>Eskişehir’in diğer ilçeleri</option>
+          <option>Eskişehir dışı</option>
+        </select>
+      </div>
+    </div>
+
+    <fieldset class="alan">
+      <legend>Fotoğraf deneyiminiz <span class="zorunlu" aria-hidden="true">*</span></legend>
+      <div class="secimler">
+        <label class="secim"><input type="radio" name="deneyim" value="yeni" required data-hata="Deneyim seviyenizi seçin."><span>Yeni başlıyorum<small>Çoğunlukla telefon ya da otomatik mod</small></span></label>
+        <label class="secim"><input type="radio" name="deneyim" value="orta" required><span>Bir süredir çekiyorum<small>Manuel ayarları biliyorum</small></span></label>
+        <label class="secim"><input type="radio" name="deneyim" value="deneyimli" required><span>Deneyimliyim<small>Projeler, sergi ya da salon katılımı</small></span></label>
+        <label class="secim"><input type="radio" name="deneyim" value="profesyonel" required><span>Profesyonelim<small>Fotoğraf işim ya da mesleğim</small></span></label>
+      </div>
+      <span class="alan-hata" aria-live="polite"></span>
+    </fieldset>
+
+    <fieldset class="alan">
+      <legend>İlgi alanlarınız <span class="zorunlu" aria-hidden="true">*</span></legend>
+      <div class="secimler secimler--kucuk" data-en-az="1" data-hata="En az bir ilgi alanı seçin.">
+        <label class="secim"><input type="checkbox" name="ilgi" value="belgesel"><span>Belgesel ve haber</span></label>
+        <label class="secim"><input type="checkbox" name="ilgi" value="sokak"><span>Sokak</span></label>
+        <label class="secim"><input type="checkbox" name="ilgi" value="doga"><span>Doğa ve kuş</span></label>
+        <label class="secim"><input type="checkbox" name="ilgi" value="portre"><span>Portre</span></label>
+        <label class="secim"><input type="checkbox" name="ilgi" value="mimari"><span>Mimari</span></label>
+        <label class="secim"><input type="checkbox" name="ilgi" value="analog"><span>Analog ve karanlık oda</span></label>
+        <label class="secim"><input type="checkbox" name="ilgi" value="spor"><span>Spor</span></label>
+        <label class="secim"><input type="checkbox" name="ilgi" value="gece"><span>Gece ve uzun pozlama</span></label>
+      </div>
+      <span class="alan-hata" aria-live="polite"></span>
+    </fieldset>
+
+    <fieldset class="alan">
+      <legend>Foton Medya’da yazmak ister misiniz?</legend>
+      <div class="secimler secimler--kucuk">
+        <label class="secim"><input type="radio" name="yazma" value="muhabir"><span>Evet, muhabir olarak</span></label>
+        <label class="secim"><input type="radio" name="yazma" value="kose"><span>Evet, köşe yazarı olarak</span></label>
+        <label class="secim"><input type="radio" name="yazma" value="hayir"><span>Şimdilik hayır</span></label>
+      </div>
+    </fieldset>
+
+    <div class="form-satir">
+      <div class="alan">
+        <label for="u-portfolyo">Fotoğraflarınızı görebileceğimiz bağlantı</label>
+        <input id="u-portfolyo" name="portfolyo" type="url" inputmode="url" placeholder="https://">
+        <span class="ipucu">Instagram, portfolyo sitesi vb. İsteğe bağlı.</span>
+        <span class="alan-hata" aria-live="polite"></span>
+      </div>
+      <div class="alan">
+        <label for="u-kaynak">Bizi nereden duydunuz?</label>
+        <select id="u-kaynak" name="kaynak">
+          <option value="">Seçin</option>
+          <option>Bir üyeden</option>
+          <option>Sosyal medya</option>
+          <option>Bir etkinlikte</option>
+          <option>Foton Medya’dan</option>
+          <option>Diğer</option>
+        </select>
+      </div>
+    </div>
+    <div class="alan">
+      <label for="u-not">Bize kendinizden bahsedin</label>
+      <textarea id="u-not" name="not" maxlength="1000" placeholder="Neler çekmeyi seviyorsunuz, dernekte neler yapmak istersiniz?"></textarea>
+    </div>
+
+    <div class="alan">
+      <label class="onay"><input type="checkbox" name="kvkk" required data-ozet="KVKK aydınlatma metni" data-hata="Devam etmek için aydınlatma metnini okuduğunuzu onaylayın."><span><a href="/kvkk-aydinlatma-metni/" target="_blank">KVKK aydınlatma metnini</a> okudum; başvurumun değerlendirilmesi için benimle iletişime geçilmesini kabul ediyorum.</span></label>
+      <span class="alan-hata" aria-live="polite"></span>
+    </div>
+    <div class="alan">
+      <label class="onay"><input type="checkbox" name="bulten" data-ozet="Bülten açık rızası"><span>Foton Medya bülteninin ve etkinlik duyurularının e-posta adresime gönderilmesine izin veriyorum. (İsteğe bağlı)</span></label>
+    </div>
+
+    <div class="form-alt">
+      <small>Tanıtım sürümü: bilgileriniz kaydedilmez.</small>
+      <button class="btn btn--birincil" type="submit"><svg class="ikon" aria-hidden="true"><use href="#i-gonder"/></svg> Başvuruyu gönder</button>
+    </div>
+  </form>
+</div>
