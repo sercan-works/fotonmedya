@@ -3,7 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<base href="/fotonmedya/">
 <title>Foton Medya — Fotoğrafçıların kalemi, Eskişehir’in hafızası</title>
 <meta name="description" content="Eskişehir FOTON’un medya platformu: fotoğrafçıların haberleri, foto-haber dizileri ve köşe yazıları; atölyeler, foto-geziler ve çocuk etkinlikleri. (Tanıtım sürümü)">
 <!-- Tanıtım sürümü: örnek haberler arama motorlarında gerçek sanılmasın diye tüm sayfalar noindex.
@@ -15,36 +14,15 @@
 <meta property="og:site_name" content="Foton Medya">
 <meta property="og:title" content="Foton Medya — Fotoğrafçıların kalemi, Eskişehir’in hafızası">
 <meta property="og:description" content="Eskişehir FOTON’un medya platformu: fotoğrafçıların haberleri, foto-haber dizileri ve köşe yazıları; atölyeler, foto-geziler ve çocuk etkinlikleri. (Tanıtım sürümü)">
-<meta property="og:image" content="assets/img/og.jpg">
+<meta property="og:image" content="/assets/img/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="site.webmanifest">
-<link rel="preload" href="assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/style.css">
-<script src="assets/js/htmx.min.js" defer></script>
-<script src="assets/js/app.js" defer></script>
-<script>
-(() => {
-  const base = '/fotonmedya';
-  const rewrite = (value) => typeof value === 'string' && value.startsWith('/') && !value.startsWith('//') ? base + value : value;
-  const apply = () => {
-    document.querySelectorAll('a[href], img[src], img[srcset], source[src], link[href], script[src], form[action], [hx-get], [hx-post], meta[content]').forEach((el) => {
-      ['href', 'src', 'srcset', 'action', 'hx-get', 'hx-post', 'content'].forEach((attr) => {
-        if (!el.hasAttribute(attr)) return;
-        const val = el.getAttribute(attr);
-        const next = rewrite(val);
-        if (next !== val) el.setAttribute(attr, next);
-      });
-    });
-  };
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', apply, { once: true });
-  } else {
-    apply();
-  }
-})();
-</script>
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/style.css">
+<script src="/assets/js/htmx.min.js" defer></script>
+<script src="/assets/js/app.js" defer></script>
 </head>
 <body data-sayfa="ana">
 <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
@@ -59,7 +37,7 @@
   <symbol id="i-kisi" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
   <symbol id="i-kisiler" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
   <symbol id="i-kamera" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></symbol>
-  <symbol id="i-telefon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.[...]"/></symbol>
+  <symbol id="i-telefon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
   <symbol id="i-eposta" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
   <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></symbol>
   <symbol id="i-paylas" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.59 13.51 6.83 3.98M15.41 6.51l-6.82 3.98"/></symbol>
@@ -90,16 +68,16 @@
   <symbol id="i-bulut" viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></symbol>
   <symbol id="i-dogus" viewBox="0 0 24 24"><path d="M17 18a5 5 0 0 0-10 0M12 2v7M4.22 10.22l1.42 1.42M1 18h2M21 18h2M18.36 11.64l1.42-1.42M23 22H1M8 6l4-4 4 4"/></symbol>
   <symbol id="i-batis" viewBox="0 0 24 24"><path d="M17 18a5 5 0 0 0-10 0M12 9V2M4.22 10.22l1.42 1.42M1 18h2M21 18h2M18.36 11.64l1.42-1.42M23 22H1M16 5l-4 4-4-4"/></symbol>
-  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8[..."/></symbol>
-  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126[..."/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></symbol>
   <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
   <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></symbol>
-  <symbol id="i-youtube" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78[..."/></symbol>
+  <symbol id="i-youtube" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><path d="m9.75 15.02 5.75-3.27-5.75-3.27v6.54z"/></symbol>
 </svg>
 
 <!-- ============ ORTAK ÜST BÖLÜM — değiştirirseniz tüm sayfalarda aynı şekilde değiştirin ============ -->
 <a class="atla" href="#icerik">İçeriğe atla</a>
-<div class="demo-serit" role="note"><strong>Tanıtım sürümü</strong> · Haberler, yazarlar ve etkinlikler örnektir; formlar bilgi kaydetmez. <a href="/hakkimizda/#tanitim-surumu">Proje hakkında</a>.</div>
+<div class="demo-serit" role="note"><strong>Tanıtım sürümü</strong> · Haberler, yazarlar ve etkinlikler örnektir; formlar bilgi kaydetmez. <a href="/hakkimizda/#tanitim-surumu">Proje hakkında</a></div>
 <noscript><div class="noscript-uyari">Bu tanıtım sitesi içerikleri JavaScript ile yükler. Lütfen tarayıcınızda JavaScript’i açın.</div></noscript>
 
 <header class="ust">
@@ -140,7 +118,7 @@
     </div>
   </div>
   <nav class="kategori-serit" aria-label="Haber kategorileri">
-    <div class="kap" data-kategori-serit><a href="/haberler/?k=sehir" data-kat="sehir" style="--renk:#1d5fa8">Şehir</a><a href="/haberler/?k=fotograf" data-kat="fotograf" style="--renk:#0a7aa0">Fotoğraf</a><a href="/haberler/?k=kultur-sanat" data-kat="kultur-sanat" style="--renk:#1d5fa8">Kültür-Sanat</a><a href="/haberler/?k=gezi" data-kat="gezi" style="--renk:#1d5fa8">Gezi</a><a href="/haberler/?k=tarih" data-kat="tarih" style="--renk:#0a7aa0">Tarih</a><a href="/haberler/?k=spor" data-kat="spor" style="--renk:#1d5fa8">Spor</a><a href="/haberler/?k=yasam" data-kat="yasam" style="--renk:#0a7aa0">Yaşam</a><a href="/haberler/?k=saglik" data-kat="saglik" style="--renk:#1d5fa8">Sağlık</a><a href="/haberler/?k=is-dunyasi" data-kat="is-dunyasi" style="--renk:#0a7aa0">İş Dünyası</a><a href="/haberler/?k=doga-cevre" data-kat="doga-cevre" style="--renk:#1d5fa8">Doğa-Çevre</a></div>
+    <div class="kap" data-kategori-serit><a href="/haberler/?k=sehir" data-kat="sehir" style="--renk:#1d5fa8">Şehir</a><a href="/haberler/?k=fotograf" data-kat="fotograf" style="--renk:#0a7aa0">Fotoğraf</a><a href="/haberler/?k=kultur-sanat" data-kat="kultur-sanat" style="--renk:#7c3aed">Kültür-Sanat</a><a href="/haberler/?k=gezi" data-kat="gezi" style="--renk:#0f766e">Gezi</a><a href="/haberler/?k=tarih" data-kat="tarih" style="--renk:#9a5b13">Tarih</a><a href="/haberler/?k=spor" data-kat="spor" style="--renk:#c2410c">Spor</a><a href="/haberler/?k=yasam" data-kat="yasam" style="--renk:#be185d">Yaşam</a><a href="/haberler/?k=saglik" data-kat="saglik" style="--renk:#15803d">Sağlık</a><a href="/haberler/?k=is-dunyasi" data-kat="is-dunyasi" style="--renk:#475569">İş Dünyası</a><a href="/haberler/?k=doga-cevre" data-kat="doga-cevre" style="--renk:#4d7c0f">Doğa-Çevre</a></div>
   </nav>
 </header>
 
@@ -148,20 +126,19 @@
   <div class="mobil-menu-perde"></div>
   <nav class="mobil-menu-panel" aria-label="Mobil menü">
     <div class="mobil-menu-ust">
-      <a class="logo" href="/"><svg class="logo-phi" viewBox="0 0 30 46" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 1v44"/><ellipse cx="15" cy="23" rx="12" ry="10.5"/></svg>
-      </a>
+      <a class="logo" href="/"><svg class="logo-phi" viewBox="0 0 30 46" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 1v44"/><ellipse cx="15" cy="23" rx="12" ry="10.5"/></svg><span class="logo-yazi"><span class="logo-ad">FOTON</span><span class="logo-alt">MEDYA</span></span></a>
       <button class="menu-dugme menu-kapat" type="button" data-menu-kapat aria-label="Menüyü kapat"><svg class="ikon" aria-hidden="true"><use href="#i-kapat"/></svg></button>
     </div>
     <a href="/">Ana sayfa</a>
-    <a href="/haberler/">Haberler</a>
-    <a href="/kose-yazilari/">Köşe Yazıları</a>
-    <a href="/etkinlikler/">Etkinlikler</a>
-    <a href="/atolyeler/">Atölyeler</a>
-    <a href="/cocuk/">Çocuk</a>
-    <a href="/galeri/">Galeri</a>
-    <a href="/etkinlik-talebi/">Etkinlik Talebi</a>
+        <a href="/haberler/">Haberler</a>
+        <a href="/kose-yazilari/">Köşe Yazıları</a>
+        <a href="/etkinlikler/">Etkinlikler</a>
+        <a href="/atolyeler/">Atölyeler</a>
+        <a href="/cocuk/">Çocuk</a>
+        <a href="/galeri/">Galeri</a>
+        <a href="/etkinlik-talebi/">Etkinlik Talebi</a>
     <h3>Kategoriler</h3>
-    <div class="mobil-kategoriler" data-mobil-kategoriler><a href="/haberler/?k=sehir">Şehir</a><a href="/haberler/?k=fotograf">Fotoğraf</a><a href="/haberler/?k=kultur-sanat">Kültür-Sanat</a><a href="/haberler/?k=gezi">Gezi</a><a href="/haberler/?k=tarih">Tarih</a><a href="/haberler/?k=spor">Spor</a><a href="/haberler/?k=yasam">Yaşam</a><a href="/haberler/?k=saglik">Sağlık</a></div>
+    <div class="mobil-kategoriler" data-mobil-kategoriler><a href="/haberler/?k=sehir">Şehir</a><a href="/haberler/?k=fotograf">Fotoğraf</a><a href="/haberler/?k=kultur-sanat">Kültür-Sanat</a><a href="/haberler/?k=gezi">Gezi</a><a href="/haberler/?k=tarih">Tarih</a><a href="/haberler/?k=spor">Spor</a><a href="/haberler/?k=yasam">Yaşam</a><a href="/haberler/?k=saglik">Sağlık</a><a href="/haberler/?k=is-dunyasi">İş Dünyası</a><a href="/haberler/?k=doga-cevre">Doğa-Çevre</a></div>
     <h3>Foton Medya</h3>
     <a href="/hakkimizda/">Hakkımızda</a>
     <a href="/kadro/">Kadromuz</a>
@@ -183,6 +160,7 @@
   </section>
 </div>
 
+<!-- Çekim Havası: Open-Meteo'dan canlı 3 günlük tahmin + fotoğrafçılar için öneri (app.js → havaBaslat) -->
 <section class="bolum" id="hava" data-hava-bolum aria-labelledby="hava-baslik">
   <div class="kap">
     <div class="bolum-baslik">
@@ -211,7 +189,7 @@
       <h2 id="kose-baslik">Köşe Yazarları</h2>
       <a class="link-ok" href="/kose-yazilari/">Tüm köşe yazıları <svg class="ikon" aria-hidden="true"><use href="#i-ok"/></svg></a>
     </div>
-    <div class="yazar-serit" data-kose-serit><div class="iskelet iskelet-kart"></div><div class="iskelet iskelet-kart"></div><div class="iskelet iskelet-kart"></div><div class="iskelet iskelet-kart"></div></div>
+    <div class="yazar-serit" data-kose-serit><div class="iskelet iskelet-kart"></div><div class="iskelet iskelet-kart"></div><div class="iskelet iskelet-kart"></div><div class="iskelet iskelet-kart"></div><div class="iskelet iskelet-kart"></div></div>
   </div>
 </section>
 
@@ -231,7 +209,7 @@
       <h2 id="etkinlik-baslik">Yaklaşan etkinlikler</h2>
       <a class="link-ok" href="/etkinlikler/">Etkinlik takvimi <svg class="ikon" aria-hidden="true"><use href="#i-ok"/></svg></a>
     </div>
-    <nav class="filtre filtre--kaydir" aria-label="Etkinlik türleri"><a href="/etkinlikler/?t=atolye" data-renk style="--renk:#1d5fa8">Atölye</a><a href="/etkinlikler/?t=foto-gezi" data-renk style="--renk:#28a8e0">Foto-Gezi</a><a href="/etkinlikler/?t=soylesi" data-renk style="--renk:#0a7aa0">Söyleşi</a></nav>
+    <nav class="filtre filtre--kaydir" aria-label="Etkinlik türleri"><a href="/etkinlikler/?t=atolye" data-renk style="--renk:#1d5fa8">Atölye</a><a href="/etkinlikler/?t=foto-gezi" data-renk style="--renk:#0f766e">Foto-gezi</a><a href="/etkinlikler/?t=sergi" data-renk style="--renk:#7c3aed">Sergi</a><a href="/etkinlikler/?t=yarisma" data-renk style="--renk:#c2410c">Yarışma</a><a href="/etkinlikler/?t=soylesi" data-renk style="--renk:#475569">Söyleşi</a><a href="/etkinlikler/?t=cocuk" data-renk style="--renk:#be185d">Çocuk</a></nav>
     <div class="izgara izgara-4" data-etkinlik-listesi data-adet="4"><div class="iskelet iskelet-kart"></div><div class="iskelet iskelet-kart"></div><div class="iskelet iskelet-kart"></div><div class="iskelet iskelet-kart"></div></div>
   </div>
 </section>
@@ -239,7 +217,7 @@
 <section class="bolum" aria-labelledby="cocuk-baslik">
   <div class="kap">
     <div class="cocuk-band">
-      <div class="cocuk-band-gorsel"><img src="assets/img/ornek/iki-kiz-kamera-k.jpg" srcset="assets/img/ornek/iki-kiz-kamera-k.jpg 800w, assets/img/ornek/iki-kiz-kamera.jpg 1600w" sizes="(max-width: 640px) 100vw, 50vw" alt="Çocuklar fotoğraf çekerken" loading="lazy"></div>
+      <div class="cocuk-band-gorsel"><img src="/assets/img/ornek/iki-kiz-kamera-k.jpg" srcset="/assets/img/ornek/iki-kiz-kamera-k.jpg 800w, /assets/img/ornek/iki-kiz-kamera.jpg 1600w" sizes="(max-width: 960px) 100vw, 560px" width="800" height="533" alt="Fotoğraf makinesiyle çekim yapan iki kız çocuğu, arkada yetişkinler" loading="lazy" decoding="async"></div>
       <div class="cocuk-band-metin">
         <span class="ust-yazi">Çocuk Atölyeleri</span>
         <h2 id="cocuk-baslik">Minik objektifler, büyük merak</h2>
@@ -249,7 +227,7 @@
           <a class="btn btn--cocuk" href="/cocuk/">Çocuk atölyeleri</a>
           <a class="btn btn--cizgi" href="/etkinlik-talebi/?tur=atolye">Okulunuz için talep edin</a>
         </div>
-        <span class="kredi"><svg class="ikon" aria-hidden="true"><use href="#i-kamera"/></svg><span>Fotoğraf: Alexander Mass / <a href="https://images.unsplash.com/..." target="_blank" rel="noopener">Unsplash</a></span></span>
+        <span class="kredi"><svg class="ikon" aria-hidden="true"><use href="#i-kamera"/></svg><span>Fotoğraf: Alexander Mass / <a href="https://images.unsplash.com/photo-1776267074150-74a42966b2ef" target="_blank" rel="noopener">Unsplash</a></span></span>
       </div>
     </div>
   </div>
@@ -309,7 +287,7 @@
       <div>
         <span class="ust-yazi">Bizimle Yaz</span>
         <h2 id="yaz-baslik">Haberin, fotoğrafın ya da bir yazın mı var?</h2>
-        <p>Foton Muhabiri ya da köşe yazarı olmak için başvurabilir; tek bir haber ya da fotoğraf da gönderebilirsiniz. Tüm içerikler editör onayından geçer ve her fotoğrafın altına çekici adı yazılır.</p>
+        <p>Foton Muhabiri ya da köşe yazarı olmak için başvurabilir; tek bir haber ya da fotoğraf da gönderebilirsiniz. Tüm içerikler editör onayından geçer ve her fotoğrafın altında çekenin adı yazar.</p>
       </div>
       <div class="cta-eylem">
         <a class="btn btn--birincil" href="/bizimle-yaz/">Başvuru ve gönderim</a>
@@ -326,11 +304,11 @@
 </section>
 </main>
 
+<!-- ============ ORTAK ALT BÖLÜM ============ -->
 <footer class="alt">
   <div class="kap alt-ust">
     <div class="alt-marka">
-      <a class="logo" href="/" aria-label="Foton Medya ana sayfa"><svg class="logo-phi" viewBox="0 0 30 46" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 1v44"/><ellipse cx="15" cy="23" rx="12" ry="10.5"/></svg>
-      </a>
+      <a class="logo" href="/" aria-label="Foton Medya ana sayfa"><svg class="logo-phi" viewBox="0 0 30 46" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 1v44"/><ellipse cx="15" cy="23" rx="12" ry="10.5"/></svg><span class="logo-yazi"><span class="logo-ad">FOTON</span><span class="logo-alt">MEDYA</span></span></a>
       <p>Fotoğrafçıların haber, foto-haber ve köşe yazısı yayınladığı; atölye ve etkinliklerin duyurulduğu Eskişehir merkezli medya platformu.</p>
       <div class="sosyal" data-sosyal-kutu hidden>
         <a href="#" data-sosyal="instagram" aria-label="Instagram" hidden><svg class="ikon" aria-hidden="true"><use href="#i-instagram"/></svg></a>
@@ -339,23 +317,23 @@
         <a href="#" data-sosyal="youtube" aria-label="YouTube" hidden><svg class="ikon" aria-hidden="true"><use href="#i-youtube"/></svg></a>
       </div>
       <div class="alt-dernek">
-        <img src="assets/img/foton-logo-beyaz.png" width="128" height="52" alt="Eskişehir FOTON — Fotoğraf Organizasyonları Derneği" loading="lazy">
+        <img src="/assets/img/foton-logo-beyaz.png" width="128" height="52" alt="Eskişehir FOTON — Fotoğraf Organizasyonları Derneği" loading="lazy">
         <small>Foton Medya, Eskişehir FOTON’un medya projesidir.</small>
       </div>
     </div>
     <div>
       <h3>Haberler</h3>
       <ul data-alt-kategoriler>
-        <li><a href="/haberler/?k=sehir">Şehir</a></li>
-        <li><a href="/haberler/?k=fotograf">Fotoğraf</a></li>
-        <li><a href="/haberler/?k=kultur-sanat">Kültür-Sanat</a></li>
-        <li><a href="/haberler/?k=gezi">Gezi</a></li>
-        <li><a href="/haberler/?k=tarih">Tarih</a></li>
-        <li><a href="/haberler/?k=spor">Spor</a></li>
-        <li><a href="/haberler/?k=yasam">Yaşam</a></li>
-        <li><a href="/haberler/?k=saglik">Sağlık</a></li>
-        <li><a href="/haberler/?k=is-dunyasi">İş Dünyası</a></li>
-        <li><a href="/haberler/?k=doga-cevre">Doğa-Çevre</a></li>
+          <li><a href="/haberler/?k=sehir">Şehir</a></li>
+          <li><a href="/haberler/?k=fotograf">Fotoğraf</a></li>
+          <li><a href="/haberler/?k=kultur-sanat">Kültür-Sanat</a></li>
+          <li><a href="/haberler/?k=gezi">Gezi</a></li>
+          <li><a href="/haberler/?k=tarih">Tarih</a></li>
+          <li><a href="/haberler/?k=spor">Spor</a></li>
+          <li><a href="/haberler/?k=yasam">Yaşam</a></li>
+          <li><a href="/haberler/?k=saglik">Sağlık</a></li>
+          <li><a href="/haberler/?k=is-dunyasi">İş Dünyası</a></li>
+          <li><a href="/haberler/?k=doga-cevre">Doğa-Çevre</a></li>
       </ul>
     </div>
     <div>

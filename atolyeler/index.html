@@ -3,7 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<base href="/fotonmedya/">
 <title>Fotoğraf Atölyeleri — Foton Medya</title>
 <meta name="description" content="Başlangıçtan ileri seviyeye uygulamalı fotoğraf atölyeleri: müfredat, eğitmenler, yaklaşan atölyeler ve kurumlara özel eğitimler.">
 <!-- Tanıtım sürümü: örnek haberler arama motorlarında gerçek sanılmasın diye tüm sayfalar noindex.
@@ -15,15 +14,15 @@
 <meta property="og:site_name" content="Foton Medya">
 <meta property="og:title" content="Fotoğraf Atölyeleri — Foton Medya">
 <meta property="og:description" content="Başlangıçtan ileri seviyeye uygulamalı fotoğraf atölyeleri: müfredat, eğitmenler, yaklaşan atölyeler ve kurumlara özel eğitimler.">
-<meta property="og:image" content="assets/img/og.jpg">
+<meta property="og:image" content="/assets/img/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="site.webmanifest">
-<link rel="preload" href="assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/style.css">
-<script src="assets/js/htmx.min.js" defer></script>
-<script src="assets/js/app.js" defer></script>
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/style.css">
+<script src="/assets/js/htmx.min.js" defer></script>
+<script src="/assets/js/app.js" defer></script>
 </head>
 <body data-sayfa="atolyeler">
 <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
@@ -38,7 +37,7 @@
   <symbol id="i-kisi" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
   <symbol id="i-kisiler" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
   <symbol id="i-kamera" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></symbol>
-  <symbol id="i-telefon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c."/></symbol>
+  <symbol id="i-telefon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
   <symbol id="i-eposta" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
   <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></symbol>
   <symbol id="i-paylas" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.59 13.51 6.83 3.98M15.41 6.51l-6.82 3.98"/></symbol>
@@ -53,11 +52,32 @@
   <symbol id="i-etiket" viewBox="0 0 24 24"><path d="M20.59 13.41 13.42 20.58a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><path d="M7 7h.01"/></symbol>
   <symbol id="i-yayin" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></symbol>
   <symbol id="i-kitap" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+  <symbol id="i-gezi" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-2.12 6.36-6.36 2.12 2.12-6.36 6.36-2.12z"/></symbol>
+  <symbol id="i-gorsel" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></symbol>
+  <symbol id="i-odul" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"/></symbol>
+  <symbol id="i-mikrofon" viewBox="0 0 24 24"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/></symbol>
+  <symbol id="i-kalp" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></symbol>
+  <symbol id="i-gonder" viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></symbol>
+  <symbol id="i-canta" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+  <symbol id="i-kure" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+  <symbol id="i-kilit" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+  <symbol id="i-goz" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-harita" viewBox="0 0 24 24"><path d="m1 6 7-4 8 4 7-4v16l-7 4-8-4-7 4z"/><path d="M8 2v16M16 6v16"/></symbol>
+  <symbol id="i-damla" viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></symbol>
+  <symbol id="i-ruzgar" viewBox="0 0 24 24"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></symbol>
+  <symbol id="i-bulut" viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></symbol>
+  <symbol id="i-dogus" viewBox="0 0 24 24"><path d="M17 18a5 5 0 0 0-10 0M12 2v7M4.22 10.22l1.42 1.42M1 18h2M21 18h2M18.36 11.64l1.42-1.42M23 22H1M8 6l4-4 4 4"/></symbol>
+  <symbol id="i-batis" viewBox="0 0 24 24"><path d="M17 18a5 5 0 0 0-10 0M12 9V2M4.22 10.22l1.42 1.42M1 18h2M21 18h2M18.36 11.64l1.42-1.42M23 22H1M16 5l-4 4-4-4"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></symbol>
+  <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></symbol>
+  <symbol id="i-youtube" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><path d="m9.75 15.02 5.75-3.27-5.75-3.27v6.54z"/></symbol>
 </svg>
 
 <!-- ============ ORTAK ÜST BÖLÜM — değiştirirseniz tüm sayfalarda aynı şekilde değiştirin ============ -->
 <a class="atla" href="#icerik">İçeriğe atla</a>
-<div class="demo-serit" role="note"><strong>Tanıtım sürümü</strong> · Haberler, yazarlar ve etkinlikler örnektir; formlar bilgi kaydetmez. <a href="/fotonmedya/hakkimizda/#tanitim-surumu">Proje hakkı</a></div>
+<div class="demo-serit" role="note"><strong>Tanıtım sürümü</strong> · Haberler, yazarlar ve etkinlikler örnektir; formlar bilgi kaydetmez. <a href="/hakkimizda/#tanitim-surumu">Proje hakkında</a></div>
 <noscript><div class="noscript-uyari">Bu tanıtım sitesi içerikleri JavaScript ile yükler. Lütfen tarayıcınızda JavaScript’i açın.</div></noscript>
 
 <header class="ust">
@@ -65,40 +85,40 @@
     <div class="kap">
       <div class="ust-sol">
         <span class="ust-tarih" data-bugun></span>
-        <a class="hava-cip" href="#hava" data-hava-cip hidden></a>
+        <a class="hava-cip" href="/#hava" data-hava-cip hidden></a>
       </div>
       <nav aria-label="Kurumsal">
-        <a href="/fotonmedya/hakkimizda/">Hakkımızda</a>
-        <a href="/fotonmedya/kadro/">Kadromuz</a>
-        <a href="/fotonmedya/bizimle-yaz/">Bizimle Yaz</a>
-        <a href="/fotonmedya/iletisim/#is-birligi">Sponsorluk</a>
-        <a href="/fotonmedya/iletisim/">İletişim</a>
+        <a href="/hakkimizda/">Hakkımızda</a>
+        <a href="/kadro/">Kadromuz</a>
+        <a href="/bizimle-yaz/">Bizimle Yaz</a>
+        <a href="/iletisim/#is-birligi">Sponsorluk</a>
+        <a href="/iletisim/">İletişim</a>
       </nav>
     </div>
   </div>
   <div class="ust-ana">
     <div class="kap">
-      <a class="logo" href="/fotonmedya/" aria-label="Foton Medya ana sayfa">
+      <a class="logo" href="/" aria-label="Foton Medya ana sayfa">
         <svg class="logo-phi" viewBox="0 0 30 46" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 1v44"/><ellipse cx="15" cy="23" rx="12" ry="10.5"/></svg>
         <span class="logo-yazi"><span class="logo-ad">FOTON</span><span class="logo-alt">MEDYA</span></span>
       </a>
       <nav class="ana-menu" aria-label="Ana menü">
-        <a href="/fotonmedya/haberler/">Haberler</a>
-        <a href="/fotonmedya/kose-yazilari/">Köşe Yazıları</a>
-        <a href="/fotonmedya/etkinlikler/">Etkinlikler</a>
-        <a href="/fotonmedya/atolyeler/" aria-current="page">Atölyeler</a>
-        <a href="/fotonmedya/cocuk/">Çocuk</a>
-        <a href="/fotonmedya/galeri/">Galeri</a>
-        <a href="/fotonmedya/etkinlik-talebi/">Etkinlik Talebi</a>
+        <a href="/haberler/">Haberler</a>
+        <a href="/kose-yazilari/">Köşe Yazıları</a>
+        <a href="/etkinlikler/">Etkinlikler</a>
+        <a href="/atolyeler/" aria-current="page">Atölyeler</a>
+        <a href="/cocuk/">Çocuk</a>
+        <a href="/galeri/">Galeri</a>
+        <a href="/etkinlik-talebi/">Etkinlik Talebi</a>
       </nav>
       <div class="ust-eylem">
-        <a class="btn btn--vurgu btn--kucuk" href="/fotonmedya/uye-ol/">Üye Ol</a>
+        <a class="btn btn--vurgu btn--kucuk" href="/uye-ol/">Üye Ol</a>
         <button class="menu-dugme" type="button" aria-expanded="false" aria-controls="mobil-menu" aria-label="Menüyü aç"><svg class="ikon" aria-hidden="true"><use href="#i-menu"/></svg></button>
       </div>
     </div>
   </div>
   <nav class="kategori-serit" aria-label="Haber kategorileri">
-    <div class="kap" data-kategori-serit><a href="/fotonmedya/haberler/?k=sehir" data-kat="sehir" style="--renk:#1d5fa8">Şehir</a><a href="/fotonmedya/haberler/?k=fotograf" data-kat="fotograf" style="--renk:#0a7aa0">Fotoğraf</a></div>
+    <div class="kap" data-kategori-serit><a href="/haberler/?k=sehir" data-kat="sehir" style="--renk:#1d5fa8">Şehir</a><a href="/haberler/?k=fotograf" data-kat="fotograf" style="--renk:#0a7aa0">Fotoğraf</a><a href="/haberler/?k=kultur-sanat" data-kat="kultur-sanat" style="--renk:#7c3aed">Kültür-Sanat</a><a href="/haberler/?k=gezi" data-kat="gezi" style="--renk:#0f766e">Gezi</a><a href="/haberler/?k=tarih" data-kat="tarih" style="--renk:#9a5b13">Tarih</a><a href="/haberler/?k=spor" data-kat="spor" style="--renk:#c2410c">Spor</a><a href="/haberler/?k=yasam" data-kat="yasam" style="--renk:#be185d">Yaşam</a><a href="/haberler/?k=saglik" data-kat="saglik" style="--renk:#15803d">Sağlık</a><a href="/haberler/?k=is-dunyasi" data-kat="is-dunyasi" style="--renk:#475569">İş Dünyası</a><a href="/haberler/?k=doga-cevre" data-kat="doga-cevre" style="--renk:#4d7c0f">Doğa-Çevre</a></div>
   </nav>
 </header>
 
@@ -106,46 +126,223 @@
   <div class="mobil-menu-perde"></div>
   <nav class="mobil-menu-panel" aria-label="Mobil menü">
     <div class="mobil-menu-ust">
-      <a class="logo" href="/fotonmedya/"><svg class="logo-phi" viewBox="0 0 30 46" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 1v44"/><ellipse cx="15" cy="23" rx="12" ry="10.5"/></svg>
-      </a>
+      <a class="logo" href="/"><svg class="logo-phi" viewBox="0 0 30 46" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 1v44"/><ellipse cx="15" cy="23" rx="12" ry="10.5"/></svg><span class="logo-yazi"><span class="logo-ad">FOTON</span><span class="logo-alt">MEDYA</span></span></a>
       <button class="menu-dugme menu-kapat" type="button" data-menu-kapat aria-label="Menüyü kapat"><svg class="ikon" aria-hidden="true"><use href="#i-kapat"/></svg></button>
     </div>
-    <a href="/fotonmedya/">Ana sayfa</a>
-    <a href="/fotonmedya/haberler/">Haberler</a>
-    <a href="/fotonmedya/kose-yazilari/">Köşe Yazıları</a>
-    <a href="/fotonmedya/etkinlikler/">Etkinlikler</a>
-    <a href="/fotonmedya/atolyeler/">Atölyeler</a>
-    <a href="/fotonmedya/cocuk/">Çocuk</a>
-    <a href="/fotonmedya/galeri/">Galeri</a>
-    <a href="/fotonmedya/etkinlik-talebi/">Etkinlik Talebi</a>
+    <a href="/">Ana sayfa</a>
+        <a href="/haberler/">Haberler</a>
+        <a href="/kose-yazilari/">Köşe Yazıları</a>
+        <a href="/etkinlikler/">Etkinlikler</a>
+        <a href="/atolyeler/" aria-current="page">Atölyeler</a>
+        <a href="/cocuk/">Çocuk</a>
+        <a href="/galeri/">Galeri</a>
+        <a href="/etkinlik-talebi/">Etkinlik Talebi</a>
     <h3>Kategoriler</h3>
-    <div class="mobil-kategoriler" data-mobil-kategoriler><a href="/fotonmedya/haberler/?k=sehir">Şehir</a><a href="/fotonmedya/haberler/?k=fotograf">Fotoğraf</a></div>
+    <div class="mobil-kategoriler" data-mobil-kategoriler><a href="/haberler/?k=sehir">Şehir</a><a href="/haberler/?k=fotograf">Fotoğraf</a><a href="/haberler/?k=kultur-sanat">Kültür-Sanat</a><a href="/haberler/?k=gezi">Gezi</a><a href="/haberler/?k=tarih">Tarih</a><a href="/haberler/?k=spor">Spor</a><a href="/haberler/?k=yasam">Yaşam</a><a href="/haberler/?k=saglik">Sağlık</a><a href="/haberler/?k=is-dunyasi">İş Dünyası</a><a href="/haberler/?k=doga-cevre">Doğa-Çevre</a></div>
     <h3>Foton Medya</h3>
-    <a href="/fotonmedya/hakkimizda/">Hakkımızda</a>
-    <a href="/fotonmedya/kadro/">Kadromuz</a>
-    <a href="/fotonmedya/bizimle-yaz/">Bizimle Yaz</a>
-    <a class="btn btn--vurgu btn--blok" href="/fotonmedya/uye-ol/">Üye Ol</a>
+    <a href="/hakkimizda/">Hakkımızda</a>
+    <a href="/kadro/">Kadromuz</a>
+    <a href="/bizimle-yaz/">Bizimle Yaz</a>
+    <a href="/iletisim/#is-birligi">Sponsorluk ve İş Birliği</a>
+    <a href="/iletisim/">İletişim</a>
+    <a class="btn btn--vurgu btn--blok" href="/uye-ol/">Üye Ol</a>
   </nav>
 </div>
+<!-- ============ /ORTAK ÜST BÖLÜM ============ -->
 
 <main id="icerik">
 <section class="sayfa-bas sayfa-bas--koyu sayfa-bas--gorsel">
-  <img src="assets/img/ornek/kamera-lens.jpg" srcset="assets/img/ornek/kamera-lens-k.jpg 800w, assets/img/ornek/kamera-lens.jpg 1600w" sizes="100vw" width="1600" height="1067" alt="Masa üzeri kamera ve lens">
+  <img src="/assets/img/ornek/kamera-lens.jpg" srcset="/assets/img/ornek/kamera-lens-k.jpg 800w, /assets/img/ornek/kamera-lens.jpg 1600w" sizes="100vw" width="1600" height="1067" alt="Masa üzerinde fotoğraf makinesi gövdesi ve objektif" fetchpriority="high" decoding="async">
   <div class="kap">
-    <nav class="kirintilar" aria-label="Konum"><a href="/fotonmedya/">Ana sayfa</a><span aria-hidden="true">›</span><span>Atölyeler</span></nav>
+    <nav class="kirintilar" aria-label="Konum"><a href="/">Ana sayfa</a><span aria-hidden="true">›</span><span>Atölyeler</span></nav>
     <span class="ust-yazi">Fotoğraf eğitimleri</span>
     <h1>Atölyeler</h1>
     <p class="giris">Temelden ileri seviyeye uygulamalı fotoğraf atölyeleri. Küçük gruplar, deneyimli eğitmenler, her hafta ödev ve birlikte değerlendirme.</p>
     <div class="sayfa-bas-eylem">
       <a class="btn btn--vurgu" href="#yaklasan">Yaklaşan atölyeler</a>
-      <a class="btn btn--ters" href="/fotonmedya/etkinlik-talebi/?tur=atolye">Kurumunuz için atölye</a>
+      <a class="btn btn--ters" href="/etkinlik-talebi/?tur=atolye">Kurumunuz için atölye</a>
     </div>
   </div>
 </section>
 
-<!-- rest of file unchanged (truncated for brevity in commit) -->
+<section class="bolum" aria-labelledby="seviyeler">
+  <div class="kap">
+    <div class="bolum-baslik"><h2 id="seviyeler">Seviyeler ve müfredat</h2></div>
+    <p class="bolum-giris">Hangi seviyeden başlayacağınızdan emin değilseniz başvuru formuna not düşün; eğitmenlerimiz size uygun atölyeyi önersin.</p>
+    <div class="izgara izgara-3">
+      <article class="seviye-kart" id="baslangic" style="--renk:#28a8e0">
+        <span class="ust-yazi">Başlangıç</span>
+        <h3>Temel Fotoğrafçılık</h3>
+        <p style="color:var(--metin-2);margin:0;font-size:.94rem">Makinenizi otomatikten çıkarmak için. Telefonla katılmak da mümkün.</p>
+        <ul>
+          <li>Işık ve pozlama üçgeni: diyafram, enstantane, ISO</li>
+          <li>Odak, alan derinliği ve objektifler</li>
+          <li>Kompozisyon ve bakış</li>
+          <li>Seçki, temel düzenleme ve sunum</li>
+          <li>Telefonla fotoğraf: ekipmandan önce gelen kurallar</li>
+        </ul>
+        <div class="seviye-alt"><span>4 hafta · en fazla 16 kişi</span><span>Ön koşul yok</span></div>
+      </article>
+      <article class="seviye-kart" id="orta" style="--renk:#2070b8">
+        <span class="ust-yazi">Orta</span>
+        <h3>Işıkla Çalışmak</h3>
+        <p style="color:var(--metin-2);margin:0;font-size:.94rem">Manuel modda rahat çekenler için tek konulu, saha ağırlıklı atölyeler.</p>
+        <ul>
+          <li>Gece ve uzun pozlama, ND filtre</li>
+          <li>Doğal ışıkla portre</li>
+          <li>Sokak fotoğrafçılığı ve etik</li>
+          <li>Dijital karanlık oda: renk, ton, yerel düzenleme</li>
+          <li>Mimari fotoğraf: çizgi ve perspektif</li>
+        </ul>
+        <div class="seviye-alt"><span>1–2 gün · en fazla 12 kişi</span><span>Manuel mod bilgisi</span></div>
+      </article>
+      <article class="seviye-kart" id="ileri" style="--renk:#10283c">
+        <span class="ust-yazi">İleri</span>
+        <h3>Proje ve Seçki</h3>
+        <p style="color:var(--metin-2);margin:0;font-size:.94rem">Kendi fotoğraf projesini geliştirmek isteyenler için dönemlik çalışma grubu.</p>
+        <ul>
+          <li>Belgesel ve foto-haber projesi kurgulamak</li>
+          <li>Seçki, sıralama ve anlatı</li>
+          <li>Salon, sergi ve yarışmalara hazırlık</li>
+          <li>Baskı ve sergileme</li>
+          <li>Foton Medya’da proje yayını</li>
+        </ul>
+        <div class="seviye-alt"><span>Dönemlik · en fazla 10 kişi</span><span>Portfolyo ile başvuru</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="bolum bolum--gri" id="yaklasan" aria-labelledby="yaklasan-baslik">
+  <div class="kap">
+    <div class="bolum-baslik">
+      <h2 id="yaklasan-baslik">Yaklaşan atölyeler ve foto-geziler</h2>
+      <a class="link-ok" href="/etkinlikler/">Tüm etkinlikler <svg class="ikon" aria-hidden="true"><use href="#i-ok"/></svg></a>
+    </div>
+    <div class="izgara izgara-3" data-etkinlik-listesi data-tur="atolye,foto-gezi" data-adet="6"><div class="iskelet iskelet-kart"></div><div class="iskelet iskelet-kart"></div><div class="iskelet iskelet-kart"></div></div>
+  </div>
+</section>
+
+<section class="bolum" aria-labelledby="egitmenler">
+  <div class="kap">
+    <div class="bolum-baslik"><h2 id="egitmenler">Eğitmenler</h2><a class="link-ok" href="/kadro/">Kadromuz <svg class="ikon" aria-hidden="true"><use href="#i-ok"/></svg></a></div>
+    <div class="izgara izgara-4" data-kisi-listesi data-egitmen><div class="iskelet iskelet-kart"></div><div class="iskelet iskelet-kart"></div><div class="iskelet iskelet-kart"></div><div class="iskelet iskelet-kart"></div></div>
+  </div>
+</section>
+
+<section class="bolum bolum--gri" aria-labelledby="nasil">
+  <div class="kap">
+    <div class="bolum-baslik"><h2 id="nasil">Atölyelerimiz nasıl işler?</h2></div>
+    <div class="izgara izgara-4">
+      <div class="ozellik"><span class="ozellik-ikon"><svg class="ikon" aria-hidden="true"><use href="#i-kisiler"/></svg></span><h3>Küçük gruplar</h3><p>Her katılımcıya zaman ayırabilmek için kontenjanlar sınırlı tutulur.</p></div>
+      <div class="ozellik"><span class="ozellik-ikon"><svg class="ikon" aria-hidden="true"><use href="#i-kamera"/></svg></span><h3>Uygulama ağırlıklı</h3><p>Teori kısa, çekim uzun. Derslerin önemli bir kısmı sahada geçer.</p></div>
+      <div class="ozellik"><span class="ozellik-ikon"><svg class="ikon" aria-hidden="true"><use href="#i-kalem"/></svg></span><h3>Ödev ve değerlendirme</h3><p>Her hafta bir ödev çekimi yapılır ve bir sonraki derste birlikte değerlendirilir.</p></div>
+      <div class="ozellik"><span class="ozellik-ikon"><svg class="ikon" aria-hidden="true"><use href="#i-yayin"/></svg></span><h3>Seçki ve yayın</h3><p>Atölye sonunda seçilen fotoğraflar Foton Medya’da adınızla yayımlanabilir.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="bolum" aria-labelledby="atolye-sss">
+  <div class="kap">
+    <div class="bolum-baslik"><h2 id="atolye-sss">Sık sorulan sorular</h2></div>
+    <div class="sss">
+      <details><summary>Fotoğraf makinem yok, katılabilir miyim?</summary><div><p>Evet. Temel Fotoğrafçılık Atölyesi’ne telefonla katılabilirsiniz. Orta seviye atölyelerde manuel ayar yapılabilen bir makine gerekir; ihtiyaç hâlinde eğitmenlerimiz ekipman konusunda yönlendirme yapar.</p></div></details>
+      <details><summary>Atölyeler ücretli mi?</summary><div><p>Atölyelerin çoğu ücretlidir ve dernek üyelerine indirim uygulanır. Bazı foto-geziler ve söyleşiler ücretsizdir. Güncel ücretler her etkinliğin sayfasında yer alır. <span class="yer-tutucu">Ücretler dernek tarafından belirlenecek</span></p></div></details>
+      <details><summary>Hangi seviyeden başlamalıyım?</summary><div><p>Makinenizi çoğunlukla otomatik modda kullanıyorsanız Başlangıç seviyesinden başlayın. Diyafram, enstantane ve ISO’yu bilinçli olarak ayarlayabiliyorsanız Orta seviye atölyeler size uygundur.</p></div></details>
+      <details><summary>Kurumumuz için özel atölye düzenleyebilir misiniz?</summary><div><p>Evet. Okullar, kamu kurumları, firmalar ve sivil toplum kuruluşları için kuruma özel atölyeler planlıyoruz. <a href="/etkinlik-talebi/?tur=atolye">Etkinlik talebi formunu</a> doldurmanız yeterli.</p></div></details>
+      <details><summary>Kaydımı iptal edebilir miyim?</summary><div><p>Gerçek sürümde kayıt iptali ve yedek listeden yer açılması kuralları her etkinlik sayfasında açıkça belirtilecektir.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<section class="bolum" aria-label="Üyelik">
+  <div class="kap">
+    <div hx-get="/partials/uyelik-cta.html" hx-trigger="load" hx-swap="outerHTML"><div class="iskelet" style="height:280px"></div></div>
+  </div>
+</section>
 </main>
 
-<footer class="alt">...</footer>
+<!-- ============ ORTAK ALT BÖLÜM ============ -->
+<footer class="alt">
+  <div class="kap alt-ust">
+    <div class="alt-marka">
+      <a class="logo" href="/" aria-label="Foton Medya ana sayfa"><svg class="logo-phi" viewBox="0 0 30 46" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 1v44"/><ellipse cx="15" cy="23" rx="12" ry="10.5"/></svg><span class="logo-yazi"><span class="logo-ad">FOTON</span><span class="logo-alt">MEDYA</span></span></a>
+      <p>Fotoğrafçıların haber, foto-haber ve köşe yazısı yayınladığı; atölye ve etkinliklerin duyurulduğu Eskişehir merkezli medya platformu.</p>
+      <div class="sosyal" data-sosyal-kutu hidden>
+        <a href="#" data-sosyal="instagram" aria-label="Instagram" hidden><svg class="ikon" aria-hidden="true"><use href="#i-instagram"/></svg></a>
+        <a href="#" data-sosyal="facebook" aria-label="Facebook" hidden><svg class="ikon" aria-hidden="true"><use href="#i-facebook"/></svg></a>
+        <a href="#" data-sosyal="x" aria-label="X" hidden><svg class="ikon ikon-dolu" aria-hidden="true"><use href="#i-x"/></svg></a>
+        <a href="#" data-sosyal="youtube" aria-label="YouTube" hidden><svg class="ikon" aria-hidden="true"><use href="#i-youtube"/></svg></a>
+      </div>
+      <div class="alt-dernek">
+        <img src="/assets/img/foton-logo-beyaz.png" width="128" height="52" alt="Eskişehir FOTON — Fotoğraf Organizasyonları Derneği" loading="lazy">
+        <small>Foton Medya, Eskişehir FOTON’un medya projesidir.</small>
+      </div>
+    </div>
+    <div>
+      <h3>Haberler</h3>
+      <ul data-alt-kategoriler>
+          <li><a href="/haberler/?k=sehir">Şehir</a></li>
+          <li><a href="/haberler/?k=fotograf">Fotoğraf</a></li>
+          <li><a href="/haberler/?k=kultur-sanat">Kültür-Sanat</a></li>
+          <li><a href="/haberler/?k=gezi">Gezi</a></li>
+          <li><a href="/haberler/?k=tarih">Tarih</a></li>
+          <li><a href="/haberler/?k=spor">Spor</a></li>
+          <li><a href="/haberler/?k=yasam">Yaşam</a></li>
+          <li><a href="/haberler/?k=saglik">Sağlık</a></li>
+          <li><a href="/haberler/?k=is-dunyasi">İş Dünyası</a></li>
+          <li><a href="/haberler/?k=doga-cevre">Doğa-Çevre</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Etkinlikler</h3>
+      <ul>
+        <li><a href="/etkinlikler/">Etkinlik takvimi</a></li>
+        <li><a href="/atolyeler/">Fotoğraf atölyeleri</a></li>
+        <li><a href="/cocuk/">Çocuk atölyeleri</a></li>
+        <li><a href="/galeri/">Foto Galeri</a></li>
+        <li><a href="/etkinlik-talebi/">Etkinlik talebi</a></li>
+      </ul>
+      <h3 style="margin-top:24px">Katılın</h3>
+      <ul>
+        <li><a href="/uye-ol/">Üye ol</a></li>
+        <li><a href="/bizimle-yaz/">Bizimle yaz</a></li>
+        <li><a href="/bizimle-yaz/?tur=fotograf">Fotoğraf gönder</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Foton Medya</h3>
+      <ul>
+        <li><a href="/hakkimizda/">Hakkımızda</a></li>
+        <li><a href="/kadro/">Kadromuz</a></li>
+        <li><a href="/kose-yazilari/">Köşe Yazıları</a></li>
+        <li><a href="/yayin-ilkeleri/">Yayın İlkeleri</a></li>
+        <li><a href="/kunye/">Künye</a></li>
+        <li><a href="/iletisim/#is-birligi">Sponsorluk ve İş Birliği</a></li>
+      </ul>
+    </div>
+    <div class="alt-iletisim">
+      <h3>İletişim</h3>
+      <ul>
+        <li><svg class="ikon" aria-hidden="true"><use href="#i-telefon"/></svg><span><a href="tel:+905349748761" data-tel="1" data-metin>0 (534) 974 87 61</a></span></li>
+        <li><svg class="ikon" aria-hidden="true"><use href="#i-telefon"/></svg><span><a href="tel:+905548930378" data-tel="2" data-metin>0 (554) 893 03 78</a></span></li>
+        <li><svg class="ikon" aria-hidden="true"><use href="#i-eposta"/></svg><span><a href="mailto:eskisehir@foton.com.tr" data-eposta data-metin>eskisehir@foton.com.tr</a></span></li>
+        <li><svg class="ikon" aria-hidden="true"><use href="#i-konum"/></svg><span data-site="iletisim.adres">Akarbaşı Mah. Akyıldız Sok. No:33/4 Tepebaşı / Eskişehir</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="alt-alt">
+    <div class="kap">
+      <span>© <span data-yil>2026</span> Eskişehir FOTON · Foton Medya tanıtım sürümü — içerikler örnektir.</span>
+      <nav aria-label="Yasal">
+        <a href="/kunye/">Künye</a>
+        <a href="/yayin-ilkeleri/">Yayın İlkeleri</a>
+        <a href="/kvkk-aydinlatma-metni/">KVKK Aydınlatma Metni</a>
+        <a href="/gizlilik-politikasi/">Gizlilik Politikası</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+<!-- ============ /ORTAK ALT BÖLÜM ============ -->
 </body>
 </html>
