@@ -16,13 +16,39 @@
 <meta property="og:description" content="Aradığınız sayfa bulunamadı.">
 <meta property="og:image" content="/assets/img/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="preload" href="/assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/style.css">
-<script src="/assets/js/htmx.min.js" defer></script>
-<script src="/assets/js/app.js" defer></script>
+<!-- 404 sayfası her adreste gösterildiği için göreli yollar burada çalışmaz; kaynaklar sitenin kökünden yüklenir.
+     Kök: GitHub Pages proje sitesinde /depo-adı/ (örn. /fotonmedya/), kendi alan adında ya da yerelde /.
+     (Depo kullanıcı sitesi olarak, yani kullanici.github.io adıyla yayınlanırsa k = '/' yapın.)
+     Gövdedeki bağlantılar "/" ile yazılır ve sayfa okunurken aynı köke bağlanır. -->
+<script>
+(function () {
+  var ilk = location.pathname.split('/')[1];
+  var k = /\.github\.io$/.test(location.hostname) && /^[\w.-]+$/.test(ilk) ? '/' + ilk + '/' : '/';
+  document.write(
+    '<link rel="icon" href="' + k + 'assets/img/favicon.svg" type="image/svg+xml">' +
+    '<link rel="manifest" href="' + k + 'site.webmanifest">' +
+    '<link rel="preload" href="' + k + 'assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>' +
+    '<link rel="preload" href="' + k + 'assets/fonts/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin>' +
+    '<link rel="stylesheet" href="' + k + 'assets/css/style.css">' +
+    '<script src="' + k + 'assets/js/htmx.min.js" defer><\/script>' +
+    '<script src="' + k + 'assets/js/app.js" defer><\/script>'
+  );
+  if (k === '/') return;
+  var izle = new MutationObserver(function (kayitlar) {
+    kayitlar.forEach(function (r) {
+      r.addedNodes.forEach(function (n) {
+        if (n.nodeType !== 1) return;
+        ['href', 'src'].forEach(function (a) {
+          var v = n.getAttribute(a);
+          if (v && v.charAt(0) === '/' && v.charAt(1) !== '/' && v.indexOf(k) !== 0) n.setAttribute(a, k + v.slice(1));
+        });
+      });
+    });
+  });
+  izle.observe(document.documentElement, { childList: true, subtree: true });
+  document.addEventListener('DOMContentLoaded', function () { izle.disconnect(); });
+})();
+</script>
 </head>
 <body data-sayfa="404">
 <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">

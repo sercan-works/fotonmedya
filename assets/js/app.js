@@ -14,8 +14,14 @@
   'use strict';
 
   var TZ = 'Europe/Istanbul';
-  var VERI_KOK = '/data/';
-  var GORSEL_KOK = '/assets/img/ornek/';
+  // Sitenin kökü bu dosyanın adresinden bulunur (<kök>/assets/js/app.js). Böylece site hem bir alan
+  // adının kökünde (/) hem de GitHub Pages gibi bir alt klasörde (/fotonmedya/) değişiklik yapmadan çalışır.
+  var KOK = (function () {
+    var s = document.currentScript || document.querySelector('script[src*="assets/js/app.js"]');
+    return s ? new URL('../../', s.src).pathname : '/';
+  })();
+  var VERI_KOK = KOK + 'data/';
+  var GORSEL_KOK = KOK + 'assets/img/ornek/';
   var D = {};            // yüklenen JSON'lar: D.site, D.gorseller, D.kadro, D.haberler…
   var istekler = {};
 
@@ -118,11 +124,12 @@
   }
 
   var url = {
-    haber: function (s) { return '/haber/?s=' + s; },
-    yazar: function (s) { return '/yazar/?s=' + s; },
-    etkinlik: function (s) { return '/etkinlik/?s=' + s; },
-    kategori: function (s) { return '/haberler/?k=' + s; },
-    tur: function (s) { return '/etkinlikler/?t=' + s; }
+    sayfa: function (yol) { return KOK + (yol || ''); },
+    haber: function (s) { return KOK + 'haber/?s=' + s; },
+    yazar: function (s) { return KOK + 'yazar/?s=' + s; },
+    etkinlik: function (s) { return KOK + 'etkinlik/?s=' + s; },
+    kategori: function (s) { return KOK + 'haberler/?k=' + s; },
+    tur: function (s) { return KOK + 'etkinlikler/?t=' + s; }
   };
 
   /* ---------------------------------------------------------- tarih */
@@ -520,6 +527,24 @@
 
   /* ---------------------------------------------------------- ortak parçalar */
 
+  /**
+   * Sayfalar göreli yol kullanır (../assets/…). Partial'lar ise hem ana sayfaya hem alt sayfalara
+   * eklendiği için bağlantılarını "/" ile yazar; bunlar burada sitenin köküne bağlanır
+   * (kök /fotonmedya/ ise /uye-ol/ → /fotonmedya/uye-ol/).
+   */
+  function kokYollari(kok) {
+    if (KOK === '/' || !kok || !kok.querySelectorAll) return;
+    var secici = '[href^="/"], [src^="/"]';
+    var ogeler = $$(secici, kok);
+    if (kok.matches && kok.matches(secici)) ogeler.push(kok);
+    ogeler.forEach(function (n) {
+      ['href', 'src'].forEach(function (a) {
+        var v = n.getAttribute(a);
+        if (v && v.charAt(1) !== '/' && v.indexOf(KOK) !== 0) n.setAttribute(a, KOK + v.slice(1));
+      });
+    });
+  }
+
   function tarihleriYaz() {
     $$('[data-bugun]').forEach(function (n) {
       n.textContent = bicim(new Date(), { day: 'numeric', month: 'long', year: 'numeric', weekday: 'long' });
@@ -821,7 +846,7 @@
     var y = yazi(param('s'));
     if (!y) {
       $$('[data-makale-yan], [data-makale-alt]').forEach(function (n) { n.hidden = true; });
-      bulunamadi(kap, 'Yazı bulunamadı', '/haberler/', 'Tüm haberler');
+      bulunamadi(kap, 'Yazı bulunamadı', url.sayfa('haberler/'), 'Tüm haberler');
       return;
     }
     var kose = y.tur === 'kose';
@@ -835,8 +860,8 @@
 
     doldur(kap, [
       el('nav', { class: 'kirintilar', 'aria-label': 'Konum' }, [
-        el('a', { href: '/', text: 'Ana sayfa' }), el('span', { 'aria-hidden': 'true', text: '›' }),
-        kose ? el('a', { href: '/kose-yazilari/', text: 'Köşe Yazıları' }) : el('a', { href: '/haberler/', text: 'Haberler' }),
+        el('a', { href: url.sayfa(), text: 'Ana sayfa' }), el('span', { 'aria-hidden': 'true', text: '›' }),
+        kose ? el('a', { href: url.sayfa('kose-yazilari/'), text: 'Köşe Yazıları' }) : el('a', { href: url.sayfa('haberler/'), text: 'Haberler' }),
         el('span', { 'aria-hidden': 'true', text: '›' }),
         el('a', { href: url.kategori(kat.slug), text: kat.ad })
       ]),
@@ -946,15 +971,15 @@
     var k = kisi(param('s'));
     if (!k) {
       $$('[data-profil-alt]').forEach(function (n) { n.hidden = true; });
-      bulunamadi(kap, 'Kişi bulunamadı', '/kadro/', 'Kadromuz');
+      bulunamadi(kap, 'Kişi bulunamadı', url.sayfa('kadro/'), 'Kadromuz');
       return;
     }
     document.title = k.ad + ' — Foton Medya';
     var rol = al(D, 'site.roller.' + k.rol + '.ad');
     doldur(kap, [
       el('nav', { class: 'kirintilar', 'aria-label': 'Konum' }, [
-        el('a', { href: '/', text: 'Ana sayfa' }), el('span', { 'aria-hidden': 'true', text: '›' }),
-        el('a', { href: '/kadro/', text: 'Kadromuz' })
+        el('a', { href: url.sayfa(), text: 'Ana sayfa' }), el('span', { 'aria-hidden': 'true', text: '›' }),
+        el('a', { href: url.sayfa('kadro/'), text: 'Kadromuz' })
       ]),
       el('div', { class: 'profil-bas' }, [
         avatar(k, 'avatar--xb'),
@@ -1025,7 +1050,7 @@
     if (!e) {
       $$('[data-etkinlik-alt]').forEach(function (n) { n.hidden = true; });
       bas.classList.remove('sayfa-bas--koyu', 'sayfa-bas--gorsel');
-      bulunamadi($('.kap', bas), 'Etkinlik bulunamadı', '/etkinlikler/', 'Tüm etkinlikler');
+      bulunamadi($('.kap', bas), 'Etkinlik bulunamadı', url.sayfa('etkinlikler/'), 'Tüm etkinlikler');
       return;
     }
     document.title = e.baslik + ' — Foton Medya';
@@ -1048,8 +1073,8 @@
     bas.insertBefore(resim(e.gorsel, 'b', { oncelik: true, sizes: '100vw', alt: gorselBilgi(e.gorsel).alt }), bas.firstChild);
     doldur($('.kap', bas), [
       el('nav', { class: 'kirintilar', 'aria-label': 'Konum' }, [
-        el('a', { href: '/', text: 'Ana sayfa' }), el('span', { 'aria-hidden': 'true', text: '›' }),
-        el('a', { href: '/etkinlikler/', text: 'Etkinlikler' }), el('span', { 'aria-hidden': 'true', text: '›' }),
+        el('a', { href: url.sayfa(), text: 'Ana sayfa' }), el('span', { 'aria-hidden': 'true', text: '›' }),
+        el('a', { href: url.sayfa('etkinlikler/'), text: 'Etkinlikler' }), el('span', { 'aria-hidden': 'true', text: '›' }),
         el('a', { href: url.tur(tur.slug), text: tur.ad })
       ]),
       el('div', { class: 'etiket-satir', style: 'margin-bottom:12px' }, [
@@ -1081,7 +1106,7 @@
             el('li', { text: 'Çocuğun fotoğrafının yayımlanması ayrı bir izne bağlıdır; izin verilmezse yüzü tanınacak şekilde yayımlanmaz.' }),
             el('li', { text: 'Ekipman atölye tarafından sağlanır; veliler etkinlik boyunca binada bekleyebilir.' })
           ]),
-          el('p', { style: 'margin-top:10px' }, [el('a', { href: '/cocuk/#guvenceler', text: 'Tüm güvenceler ve veli bilgilendirmesi' })])
+          el('p', { style: 'margin-top:10px' }, [el('a', { href: url.sayfa('cocuk/#guvenceler'), text: 'Tüm güvenceler ve veli bilgilendirmesi' })])
         ])
       ]) : null,
       egitmen ? el('aside', { class: 'yazar-kutu', style: 'margin-top:28px', 'aria-label': 'Eğitmen' }, [
@@ -1117,7 +1142,7 @@
       el('div', { class: 'yan-kutu' }, [
         el('h3', { text: 'Kurumunuz için' }),
         el('p', { style: 'font-size:.92rem;color:var(--metin-2)', text: 'Bu etkinliğin benzerini okulunuz, kurumunuz ya da firmanız için düzenleyebiliriz.' }),
-        el('a', { class: 'link-ok', href: '/etkinlik-talebi/?tur=atolye' }, ['Etkinlik talebi gönder', ikon('ok')])
+        el('a', { class: 'link-ok', href: url.sayfa('etkinlik-talebi/?tur=atolye') }, ['Etkinlik talebi gönder', ikon('ok')])
       ])
     ]);
 
@@ -1753,6 +1778,7 @@
 
   /** htmx ile sonradan gelen içerik: iletişim bilgisi + formlar + listeler */
   function yeniIcerik(kok) {
+    kokYollari(kok);
     iletisimUygula(kok);
     formlariKur(kok);
     listeleriCiz(kok);

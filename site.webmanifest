@@ -2,12 +2,12 @@
   "name": "Foton Medya — Eskişehir FOTON",
   "short_name": "Foton Medya",
   "description": "Fotoğrafçıların haber, foto-haber ve köşe yazısı yayınladığı; atölye ve etkinliklerin duyurulduğu Eskişehir merkezli medya platformu. (Tanıtım sürümü)",
-  "start_url": "/",
+  "start_url": "./",
   "display": "browser",
   "background_color": "#ffffff",
   "theme_color": "#10283c",
   "lang": "tr-TR",
   "icons": [
-    { "src": "/assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+    { "src": "assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
   ]
 }

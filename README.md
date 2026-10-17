@@ -25,11 +25,36 @@ python3 -m http.server 8080
 
 8080 portu doluysa başka bir port verin: `python3 -m http.server 8091`.
 
-## Yayına alma (Cloudflare Pages)
+GitHub Pages'teki gibi alt klasörde denemek için bir üst klasörden sunun ve `http://localhost:8080/fotonmedya/`
+adresini açın: `cd .. && python3 -m http.server 8080`.
 
-Cloudflare Pages → *Create project* → *Direct upload* ile klasörü yükleyin (derleme komutu yok).
+## Yayına alma
+
+Site hem bir alan adının kökünde (`https://ornek.com/`) hem de bir alt klasörde
+(`https://sercan-works.github.io/fotonmedya/`) değişiklik yapmadan çalışır.
+
+**GitHub Pages:** *Settings → Pages → Deploy from a branch → `main` / `(root)`*. Kökteki boş `.nojekyll`
+dosyası GitHub'ın Jekyll işlemesini kapatır; dosyalar olduğu gibi yayınlanır. `_headers` GitHub Pages'te
+kullanılmaz (noindex yine sayfalardaki `<meta name="robots">` ile sağlanır).
+
+**Cloudflare Pages:** *Create project → Direct upload* ile klasörü yükleyin (derleme komutu yok).
 `_headers` dosyası önbellek, güvenlik başlıkları ve `X-Robots-Tag: noindex` ayarlarını içerir.
-`404.html` bulunamayan adreslerde otomatik gösterilir.
+
+`404.html` her iki serviste de bulunamayan adreslerde otomatik gösterilir.
+
+### Yollar (yeni sayfa ya da bağlantı eklerken)
+
+Site alt klasörde de çalışabilsin diye **sayfalarda bağlantılar `/` ile başlamaz**, sayfaya göre göreli yazılır:
+
+| Nerede | Örnek |
+|---|---|
+| Ana sayfa (`index.html`) | `href="haberler/"`, `src="assets/img/…"`, ana sayfa bağlantısı `href="./"` |
+| Alt sayfalar (`haberler/index.html` vb.) | `href="../haberler/"`, `src="../assets/img/…"`, ana sayfa bağlantısı `href="../"` |
+| `partials/*.html` ve `404.html` | `href="/uye-ol/"` gibi `/` ile yazılır; sitenin köküne otomatik bağlanır |
+| `app.js` | `url.sayfa('kadro/')`, `url.haber(slug)` … (kök, `app.js`'in adresinden bulunur) |
+
+`/` ile başlayan bir bağlantı sayfaya yazılırsa GitHub Pages'te sitenin dışına (`sercan-works.github.io/…`) gider
+ve CSS, görsel ya da sayfa bulunamaz.
 
 ---
 

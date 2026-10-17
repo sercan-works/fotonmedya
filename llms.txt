@@ -18,11 +18,11 @@
 - Adres: Akarbaşı Mah. Akyıldız Sok. No:33/4 Tepebaşı / Eskişehir
 
 ## Sayfalar
-- [Ana sayfa](/): manşet, son haberler, köşe yazarları, Haftanın Karesi, etkinlikler
-- [Haberler](/haberler/) · [Köşe Yazıları](/kose-yazilari/) · [Kadromuz](/kadro/)
-- [Etkinlikler](/etkinlikler/) · [Atölyeler](/atolyeler/) · [Çocuk Atölyeleri](/cocuk/)
-- [Etkinlik Talebi](/etkinlik-talebi/) · [Üye Ol](/uye-ol/) · [Bizimle Yaz](/bizimle-yaz/)
-- [Foto Galeri](/galeri/) · [Hakkımızda](/hakkimizda/) · [Yayın İlkeleri](/yayin-ilkeleri/) · [Künye](/kunye/)
+- [Ana sayfa](./): manşet, son haberler, köşe yazarları, Haftanın Karesi, etkinlikler
+- [Haberler](haberler/) · [Köşe Yazıları](kose-yazilari/) · [Kadromuz](kadro/)
+- [Etkinlikler](etkinlikler/) · [Atölyeler](atolyeler/) · [Çocuk Atölyeleri](cocuk/)
+- [Etkinlik Talebi](etkinlik-talebi/) · [Üye Ol](uye-ol/) · [Bizimle Yaz](bizimle-yaz/)
+- [Foto Galeri](galeri/) · [Hakkımızda](hakkimizda/) · [Yayın İlkeleri](yayin-ilkeleri/) · [Künye](kunye/)
 
 ## Notlar
 - Formlar tanıtım modunda çalışır; hiçbir bilgi kaydedilmez veya gönderilmez.
